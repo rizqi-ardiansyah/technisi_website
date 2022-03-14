@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Role;
+use App\Models\Technician;
+use App\Models\Customer;
+use App\Models\Message;
 
 class User extends Authenticatable
 {
@@ -41,4 +45,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
+
+    public function customer(){
+        return $this->hasOne(Customer::class);
+    }
+
+    public function technician(){
+        return $this->hasOne(Technician::class);
+    }
+
+    public function sender(){
+        return $this->hasMany(Message::class, 'sender');
+    }
+
+    public function receiver(){
+        return $this->hasMany(Message::class, 'receiver');
+    }
 }
