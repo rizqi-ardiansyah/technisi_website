@@ -19,7 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('certification', 225);
             $table->string('address', 225);
-            $table->string('photos', 100);
+            $table->string('photos', 100)->nullable();
             $table->timestamps();
 
             $table->foreign('specialist_id')->references('id_specialist')->on('specialization');

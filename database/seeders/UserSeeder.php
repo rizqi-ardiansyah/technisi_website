@@ -23,6 +23,6 @@ class UserSeeder extends Seeder
             'password' => bcrypt('admin123'),
         ];
         DB::table('users')->insert($admin);
-        User::factory(70)->create();
+        User::factory(30)->create();
     }
 }
