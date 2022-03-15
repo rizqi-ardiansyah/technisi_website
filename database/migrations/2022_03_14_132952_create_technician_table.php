@@ -18,6 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('specialist_id');
             $table->unsignedBigInteger('user_id');
             $table->string('certification', 45);
+            $table->string('address', 100);
+            $table->string('photos', 45);
             $table->timestamps();
 
             $table->foreign('specialist_id')->references('id_specialist')->on('specialization');

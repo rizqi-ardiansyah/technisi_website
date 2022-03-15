@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Specialization;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -18,8 +19,11 @@ class TechnicianFactory extends Factory
     public function definition()
     {
         return [
-            'certification' => $this->faker->sentence(),
+            'specialist_id' =>$this->faker->rand(1, Specialization::class),
             'user_id' => $this->faker->rand(1, User::count()),
+            'certification' => $this->faker->sentence(),
+            'address' => $this->faker->address(),
+            'photos'  => $this->faker->image('public/assets/images/tech', 400, 300),
         ];
     }
 }

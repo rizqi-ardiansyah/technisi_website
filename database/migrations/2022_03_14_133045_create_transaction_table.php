@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('transaction', function (Blueprint $table) {
             $table->bigIncrements('trans_id');
-            $table->string('level', 50);
+            $table->enum('level', ['Ringan', 'Sedang', 'Berat']);
             $table->text('description');
             $table->float('price');
-            $table->set('status', ['Order', 'Pickup', 'On Service', 'Complete', 'Failed']);
+            $table->enum('status', ['Order', 'Pickup', 'On Service', 'Complete', 'Failed']);
             $table->unsignedBigInteger('customer_id');
             $table->unsignedBigInteger('id_technician');
             $table->timestamps();

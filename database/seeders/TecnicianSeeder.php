@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Technician;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,8 +13,7 @@ class TecnicianSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        //
+    public function run() {
+        Technician::factory(15)->create();
     }
 }
