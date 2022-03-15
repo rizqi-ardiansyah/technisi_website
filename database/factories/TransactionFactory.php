@@ -21,8 +21,8 @@ class TransactionFactory extends Factory {
             'description' => $this->faker->sentence(),
             'price' => $this->faker->randomFloat(2, 30000, 800000),
             'status' => $this->faker->randomElement(['Order', 'Pickup', 'On Service', 'Complete', 'Failed']),
-            'customer_id' => $this->faker->rand(1, Customer::count()),
-            'id_technician' => $this->faker->rand(1, Technician::count()),
+            'customer_id' => rand(1, Customer::count()),
+            'id_technician' => rand(1, Technician::count()),
         ];
     }
 }

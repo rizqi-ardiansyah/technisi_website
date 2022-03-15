@@ -17,9 +17,9 @@ return new class extends Migration
             $table->bigIncrements('technician_id');
             $table->unsignedBigInteger('specialist_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('certification', 45);
-            $table->string('address', 100);
-            $table->string('photos', 45);
+            $table->string('certification', 225);
+            $table->string('address', 225);
+            $table->string('photos', 100);
             $table->timestamps();
 
             $table->foreign('specialist_id')->references('id_specialist')->on('specialization');

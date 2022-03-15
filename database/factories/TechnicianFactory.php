@@ -19,11 +19,11 @@ class TechnicianFactory extends Factory
     public function definition()
     {
         return [
-            'specialist_id' =>$this->faker->rand(1, Specialization::class),
-            'user_id' => $this->faker->rand(1, User::count()),
+            'specialist_id' => rand(1, Specialization::count()),
+            'user_id' => rand(1, User::count()),
             'certification' => $this->faker->sentence(),
             'address' => $this->faker->address(),
-            'photos'  => $this->faker->image('public/assets/images/tech', 400, 300),
+            'photos'  => $this->faker->image('public/assets/image/tech', 400, 300),
         ];
     }
 }

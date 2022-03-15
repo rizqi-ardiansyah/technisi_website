@@ -20,8 +20,8 @@ class MessageFactory extends Factory
         return [
             'msg_content' => $this->faker->sentence(),
             'is_seen' => $this->faker->boolean(),
-            'sender' => $this->faker()->rand(1, User::count()),
-            'receiver' => $this->faker()->rand(1, User::count()),
+            'sender' => rand(1, User::count()),
+            'receiver' => rand(1, User::count()),
         ];
     }
 }

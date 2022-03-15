@@ -18,10 +18,11 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'username' => 'admin',
+            'phone' => '08113652797',
             'id_role' => 1,
             'password' => bcrypt('admin123'),
         ];
-        DB::table('user')->insert($admin);
+        DB::table('users')->insert($admin);
         User::factory(70)->create();
     }
 }
