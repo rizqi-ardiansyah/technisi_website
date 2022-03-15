@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigIncrements('msg_id');
             $table->text('msg_content');
             $table->boolean('is_seen');
-            $table->string('dir', 225);
-            $table->string('file', 100);
+            $table->string('dir', 225)->nullable();
+            $table->string('file', 100)->nullable();
             $table->unsignedBigInteger('sender');
             $table->unsignedBigInteger('receiver');
             $table->timestamps();
