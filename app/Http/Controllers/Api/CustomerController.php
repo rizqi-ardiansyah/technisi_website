@@ -11,7 +11,7 @@ use App\Models\User;
 class CustomerController extends Controller {
 
     public function showAll(){
-        $cust = Customer::join('users', 'users.id', '=', 'customer.user_id')->get()->paginate(5);
+        $cust = Customer::join('users', 'users.id', '=', 'customer.user_id')->get();
         return response()->json(['cust' => $cust]);
     }
 
