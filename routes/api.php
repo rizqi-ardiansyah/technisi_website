@@ -23,4 +23,5 @@ use App\Http\Controllers\Api\CustomerController;
 Route::prefix('customer/')->group(function(){
     Route::get('list', [CustomerController::class, 'showAll'])->name('show.all');
     Route::get('{id}/detail', [CustomerController::class, 'showCust'])->name('show.cust');
+    Route::post('{id}/delete', [CustomerController::class, 'destroy'])->name('delete.cust');
 });
