@@ -23,8 +23,8 @@ return new class extends Migration
             $table->unsignedBigInteger('id_technician');
             $table->timestamps();
 
-            $table->foreign('customer_id')->references('cust_id')->on('customer');
-            $table->foreign('id_technician')->references('technician_id')->on('technician');
+            $table->foreign('customer_id')->references('cust_id')->on('customer')->cascadeOnDelete();
+            $table->foreign('id_technician')->references('technician_id')->on('technician')->cascadeOnDelete();
         });
     }
 

@@ -12,6 +12,7 @@ class Technician extends Model {
     use HasFactory;
 
     protected $table = 'Technician';
+    protected $primaryKey = 'technician_id';
     protected $fillable = [
         'technician_id',
         'specialist_id',

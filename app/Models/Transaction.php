@@ -9,6 +9,7 @@ class Transaction extends Model {
     use HasFactory;
 
     protected $table = 'Transaction';
+    protected $primaryKey = 'trans_id';
     protected $fillable = [
         'trans_id',
         'level',

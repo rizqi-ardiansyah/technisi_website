@@ -10,6 +10,7 @@ class Specialization extends Model {
     use HasFactory;
 
     protected $table = 'Specialization';
+    protected $primaryKey = 'id_specialist';
     protected $fillable = [
         'id_specialist',
         'name',

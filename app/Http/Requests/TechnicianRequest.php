@@ -13,7 +13,7 @@ class TechnicianRequest extends FormRequest {
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,12 +25,6 @@ class TechnicianRequest extends FormRequest {
         switch($this->method()){
             case 'POST': {
                 return [
-                    'name' => 'required|string|max:255',
-                    'email' => 'required|string|email|min:35|max:255|unique:users',
-                    'username' => 'required|string|min:10|max:100|unique:users',
-                    'phone' => 'required|string|max:20|min:12',
-                    'id_role' => 'required|integer|exists:role,id',
-                    'password' => 'required|string|min:8|max:255',
                     'specialist_id' => 'required|integer|exists:specialization,id_specialist',
                     'user_id' => 'required|integer|exists:users,id',
                     'certification' => 'required|string|max:255',
@@ -40,11 +34,6 @@ class TechnicianRequest extends FormRequest {
             } break;
             case 'PUT': {
                 return [
-                    'name' => 'sometimes|string|max:255',
-                    'email' => 'sometimes|string|email|min:35|max:255|unique:users',
-                    'username' => 'sometimes|string|min:10|max:100|unique:users',
-                    'phone' => 'sometimes|string|max:20|min:12',
-                    'password' => 'sometimes|string|min:8|max:255',
                     'specialist_id' => 'sometimes|integer|exists:specialization,id_specialist',
                     'user_id' => 'sometimes|integer|exists:users,id',
                     'certification' => 'sometimes|string|max:255',

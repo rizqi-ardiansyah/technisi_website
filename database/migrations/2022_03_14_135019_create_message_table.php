@@ -23,8 +23,8 @@ return new class extends Migration
             $table->unsignedBigInteger('receiver');
             $table->timestamps();
 
-            $table->foreign('sender')->references('id')->on('users');
-            $table->foreign('receiver')->references('id')->on('users');
+            $table->foreign('sender')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('receiver')->references('id')->on('users')->cascadeOnDelete();
         });
     }
 

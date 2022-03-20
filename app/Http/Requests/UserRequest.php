@@ -13,9 +13,8 @@ class UserRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
-    {
-        return false;
+    public function authorize() {
+        return true;
     }
 
     /**
@@ -24,9 +23,27 @@ class UserRequest extends FormRequest
      * @return array
      */
     public function rules() {
-        return [
-            //
-        ];
+        switch($this->method()){
+            case 'POST': {
+                return [
+                    'name' => 'required|string|max:255',
+                    'email' => 'required|string|email|min:15|max:255|unique:users',
+                    'username' => 'required|string|min:10|max:100|unique:users',
+                    'phone' => 'required|string|max:20|min:12',
+                    'id_role' => 'required|integer|exists:role,id',
+                    //'password' => 'required|string|min:8|max:255',
+                ];
+            } break;
+            case 'PUT': {
+                return [
+                    'name' => 'sometimes|string|max:255',
+                    'email' => 'sometimes|string|email|min:15|max:255|unique:users',
+                    'username' => 'sometimes|string|min:10|max:100|unique:users',
+                    'phone' => 'sometimes|string|max:20|min:12',
+                    //'password' => 'sometimes|string|min:8|max:255',
+                ];
+            } break;
+        }
     }
 
     protected function failedValidation(Validator $validator) {

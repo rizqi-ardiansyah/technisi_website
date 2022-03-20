@@ -11,6 +11,7 @@ class Customer extends Model {
     use HasFactory;
 
     protected $table = 'Customer';
+    protected $primaryKey = 'cust_id';
     protected $fillable = [
         'cust_id',
         'address',
@@ -21,7 +22,7 @@ class Customer extends Model {
     ];
 
     public function user(){
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class);
     }
 
     public function transaction(){

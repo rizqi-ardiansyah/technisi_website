@@ -21,6 +21,8 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $table = 'users';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'id',
         'name',
@@ -55,7 +57,7 @@ class User extends Authenticatable
     }
 
     public function customer(){
-        return $this->hasOne(Customer::class, 'id');
+        return $this->hasOne(Customer::class);
     }
 
     public function technician(){

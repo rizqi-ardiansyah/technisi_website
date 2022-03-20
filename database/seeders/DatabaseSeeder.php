@@ -18,10 +18,10 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
             CustomerSeeder::class,
-            SpecializationSeeder::class,
-            TecnicianSeeder::class,
-            TransactionSeeder::class,
-            MessageSeeder::class,
+            //SpecializationSeeder::class,
+            //TecnicianSeeder::class,
+            //TransactionSeeder::class,
+            //MessageSeeder::class,
         ]);
     }
 }
