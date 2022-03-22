@@ -13,7 +13,7 @@ class Specialization extends Model {
     protected $primaryKey = 'id_specialist';
     protected $fillable = [
         'id_specialist',
-        'name',
+        'category',
         'created_at',
         'updated_at',
     ];

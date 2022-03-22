@@ -4,32 +4,26 @@ use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CustomerController;
+use App\Http\Controllers\Api\TechnicianController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Auth;
 
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
 Auth::routes();
-// Route::prefix('auth/')->group(function(){
-//     Route::post('register', [RegisterController::class, 'register'])->name('register');
-// });
 
 Route::prefix('customer/')->group(function(){
     Route::get('list', [CustomerController::class, 'showAll'])->name('show.all');
     Route::get('{id}/detail', [CustomerController::class, 'showCust'])->name('show.cust');
     Route::delete('{id}/delete', [CustomerController::class, 'destroy'])->name('delete.cust');
     Route::put('{id}/update', [CustomerController::class, 'updateCust'])->name('update.cust');
+});
+
+Route::prefix('technician/')->group(function(){
+    Route::get('list', [TechnicianController::class, 'showAll'])->name('show.all.tech');
+    Route::get('{id}/detail', [TechnicianController::class, 'showTech'])->name('show.tech');
+    Route::delete('{id}/delete', [TechnicianController::class, 'destroy'])->name('delete.tech');
+    Route::put('{id}/update', [TechnicianController::class, 'updateTech'])->name('update.tech');
 });

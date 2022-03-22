@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\File;
 class CustomerController extends Controller {
 
     public function showAll(){
-        $cust = Customer::select('cust_id', 'address', 'user_id')->with('user:id,name,email,phone')->get();
+        $cust = Customer::select('cust_id', 'address', 'user_id')
+        ->with('user:id,name,email,phone')->get();
         return response()->json(['cust' => $cust]);
     }
 

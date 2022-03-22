@@ -34,8 +34,6 @@ class TechnicianRequest extends FormRequest {
             } break;
             case 'PUT': {
                 return [
-                    'specialist_id' => 'sometimes|integer|exists:specialization,id_specialist',
-                    'user_id' => 'sometimes|integer|exists:users,id',
                     'certification' => 'sometimes|string|max:255',
                     'address' => 'sometimes|string|max:255',
                     'photos' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
