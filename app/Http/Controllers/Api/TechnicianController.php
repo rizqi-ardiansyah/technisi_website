@@ -18,9 +18,14 @@ use App\Models\Technician;
 class TechnicianController extends Controller {
     public function showAll(){
         $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
-        ->join('specialization', 'specialization.id_specialist', '=', 'specialist_id')
         ->with('user:id,name,email,phone')
+        ->with('specialization:id_specialist,category')
         ->get();
+
+        // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
+        // ->join('specialization', 'technician.specialist_id', '=', 'specialization.id_specialist')
+        // ->join('users', 'technician.user_id', '=', 'users.id')
+        // ->get();
         return response()->json(['data' => $tech]);
     }
 
@@ -30,12 +35,19 @@ class TechnicianController extends Controller {
         ->with('specialization:id_specialist,category')
         ->where('technician_id', $id)
         ->first();
+
+        // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos',
+        //     's.id_specialist', 's.category', 'u.id', 'u.name', 'u.email', 'u.phone'
+        // )
+        // ->join('specialization AS s', 'technician.specialist_id', '=', 's.id_specialist')
+        // ->join('users AS u', 'technician.user_id', '=', 'u.id')
+        // ->first();
         return response()->json(['tech' => $tech]);
     }
 
     public function destroy($id){
         $tech = Technician::where('technician_id', '=', $id)->first();
-        $user = User::where('id', '=', $tech->technician_id)->delete();
+        $user = User::where('id', '=', $tech->user_id)->delete();
 
         return response()->json(['message' => 'Succesfully delete data']);
     }
@@ -43,7 +55,7 @@ class TechnicianController extends Controller {
     public function updateTech(TechnicianRequest $request, UserRequest $req, $id){
         $request->validated();
         //$req->validated();
-        $tech = Technician::where('cust_id', $id)->first();
+        $tech = Technician::where('technician_id', $id)->first();
         $id_ = $tech->user_id;
         $user = User::select('id', 'name', 'email', 'username', 'phone')->where('id', $tech->user_id)->first();
 

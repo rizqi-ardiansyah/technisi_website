@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('transaction', function (Blueprint $table) {
             $table->bigIncrements('trans_id');
             $table->enum('level', ['Ringan', 'Sedang', 'Berat']);
-            $table->text('description');
+            $table->text('desc');
             $table->float('price');
             $table->enum('status', ['Order', 'Pickup', 'On Service', 'Complete', 'Failed']);
             $table->unsignedBigInteger('customer_id');

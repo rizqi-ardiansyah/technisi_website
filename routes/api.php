@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CustomerController;
 use App\Http\Controllers\Api\TechnicianController;
+use App\Http\Controllers\Api\TransactionController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,4 +27,11 @@ Route::prefix('technician/')->group(function(){
     Route::get('{id}/detail', [TechnicianController::class, 'showTech'])->name('show.tech');
     Route::delete('{id}/delete', [TechnicianController::class, 'destroy'])->name('delete.tech');
     Route::put('{id}/update', [TechnicianController::class, 'updateTech'])->name('update.tech');
+});
+
+Route::prefix('transaction/')->group(function(){
+    Route::get('list', [TransactionController::class, 'showAll'])->name('show.all.trans');
+    Route::get('{id}/detail', [TransactionController::class, 'showTrans'])->name('show.trans');
+    Route::delete('{id}/delete', [TransactionController::class, 'destroy'])->name('delete.trans');
+    //Route::put('{id}/update', [TransactionController::class, 'updateTech'])->name('update.tech');
 });

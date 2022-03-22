@@ -29,7 +29,7 @@ class Technician extends Model {
     }
 
     public function specialization(){
-        return $this->belongsTo(Specialization::class);
+        return $this->belongsTo(Specialization::class, 'specialist_id', 'id_specialist');
     }
 
     public function user(){

@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             CustomerSeeder::class,
             SpecializationSeeder::class,
             TecnicianSeeder::class,
-            //TransactionSeeder::class,
+            TransactionSeeder::class,
             //MessageSeeder::class,
         ]);
     }

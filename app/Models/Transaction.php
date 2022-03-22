@@ -13,7 +13,7 @@ class Transaction extends Model {
     protected $fillable = [
         'trans_id',
         'level',
-        'description',
+        'desc',
         'price',
         'status',
         'customer_id',
@@ -23,10 +23,10 @@ class Transaction extends Model {
     ];
 
     public function customer(){
-        return $this->belongsTo(Customer::class);
+        return $this->belongsTo(Customer::class, 'customer_id', 'cust_id');
     }
 
     public function technician(){
-        return $this->belongsTo(Technician::class);
+        return $this->belongsTo(Technician::class, 'id_technician', 'technician_id');
     }
 }
