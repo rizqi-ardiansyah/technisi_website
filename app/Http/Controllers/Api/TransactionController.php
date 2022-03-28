@@ -58,6 +58,25 @@ class TransactionController extends Controller {
         return response()->json(['data' => $data]);
     }
 
+    public function checkOrder($id){
+        $data = Transaction::select('trans_id', 'level',
+        'desc', 'price', 'status', 'customer_id', 'id_technician', 'c.cust_id', 'c.user_id',
+        't.technician_id', 't.user_id', 'u.name AS user_name', 'u2.name AS tech_name')
+        ->join('customer AS c', 'transaction.customer_id', '=', 'c.cust_id')
+        ->join('technician AS t', 'transaction.id_technician', '=', 't.technician_id')
+        ->join('users AS u', 'c.user_id', '=', 'u.id')
+        ->join('users AS u2', 't.user_id', '=', 'u2.id')
+        ->where('id_technician', $id)->get();
+
+        // $data = Transaction::select('trans_id', 'level',
+        // 'desc', 'price', 'status', 'customer_id', 'id_technician')
+        // ->with('customer:cust_id,user_id')
+        // ->with('technician:technician_id,user_id')
+        // ->where('trans_id', $id)->first();
+
+        return response()->json(['data' => $data]);
+    }
+
     public function destroy($id){
         $cust = Transaction::where('trans_id', '=', $id)->delete();
         return response()->json(['message' => 'Succesfully delete data']);
@@ -65,7 +84,7 @@ class TransactionController extends Controller {
 
     public function updateTrans(TransactionRequest $request, $id){
         $request->validated();
-        $data = Transaction::where('trans_id', '=', $id)->first();
+        $data = Transaction::where('id_technician', $id)->first();
 
         $data->level = $request->level;
         $data->desc = $request->desc;

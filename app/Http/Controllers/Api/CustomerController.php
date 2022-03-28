@@ -15,6 +15,20 @@ use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\File;
 
 class CustomerController extends Controller {
+
+    public function updateTrans(TransactionRequest $req, $id){
+        $req->validated();
+        $data = Transaction::select('desc', 'price')
+        ->where('customer_id', $id)
+        ->where('status', '!=', 'Complete')
+        ->get();
+
+        $data->desc = $req->desc;
+        $data->price = $req->price;
+        $data->update();
+        return response()->json(["Message"   => "Transaction has successfully update"]);
+    }
+
     public function showAll(){
         $cust = Customer::select('cust_id', 'address', 'user_id', 'u.name', 'u.email', 'u.phone', 'u.username')
         ->join('users AS u', 'customer.user_id', '=', 'u.id')->get();

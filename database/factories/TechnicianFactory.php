@@ -23,7 +23,7 @@ class TechnicianFactory extends Factory
             'user_id' => rand(1, User::count()),
             'certification' => $this->faker->sentence(),
             'address' => $this->faker->address(),
-            'photos'  => $this->faker->image('public/assets/image/tech', 400, 300),
+            //'photos'  => $this->faker->image('public/assets/image/tech', 400, 300),
         ];
     }
 }

@@ -20,6 +20,7 @@ Route::prefix('customer/')->group(function(){
     Route::get('{id}/detail', [CustomerController::class, 'showCust'])->name('show.cust');
     Route::delete('{id}/delete', [CustomerController::class, 'destroy'])->name('delete.cust');
     Route::put('{id}/update', [CustomerController::class, 'updateCust'])->name('update.cust');
+    Route::get('{id}/order', [CustomerController::class, 'updateTrans'])->name('update.order');
 });
 
 Route::prefix('technician/')->group(function(){
@@ -35,4 +36,5 @@ Route::prefix('transaction/')->group(function(){
     Route::get('{id}/detail', [TransactionController::class, 'showTrans'])->name('show.trans');
     Route::delete('{id}/delete', [TransactionController::class, 'destroy'])->name('delete.trans');
     Route::put('{id}/update', [TransactionController::class, 'updateTrans'])->name('update.trans');
+    Route::get('{id}/order', [TransactionController::class, 'checkOrder'])->name('order.check');
 });
