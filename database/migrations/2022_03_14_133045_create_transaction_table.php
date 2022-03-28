@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('trans_id');
             $table->enum('level', ['Ringan', 'Sedang', 'Berat']);
             $table->text('desc');
-            $table->float('price');
+            $table->float('price')->nullable();
             $table->enum('status', ['Order', 'Pickup', 'On Service', 'Complete', 'Failed']);
             $table->unsignedBigInteger('customer_id');
             $table->unsignedBigInteger('id_technician');

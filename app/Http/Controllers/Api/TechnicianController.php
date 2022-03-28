@@ -17,31 +17,31 @@ use App\Models\Technician;
 
 class TechnicianController extends Controller {
     public function showAll(){
-        $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
-        ->with('user:id,name,email,phone')
-        ->with('specialization:id_specialist,category')
-        ->get();
-
         // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
-        // ->join('specialization', 'technician.specialist_id', '=', 'specialization.id_specialist')
-        // ->join('users', 'technician.user_id', '=', 'users.id')
+        // ->with('user:id,name,email,phone')
+        // ->with('specialization:id_specialist,category')
         // ->get();
+
+        $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
+        ->join('specialization', 'technician.specialist_id', '=', 'specialization.id_specialist')
+        ->join('users', 'technician.user_id', '=', 'users.id')
+        ->get();
         return response()->json(['data' => $tech]);
     }
 
     public function showTech($id){
-        $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
-        ->with('user:id,name,email,phone')
-        ->with('specialization:id_specialist,category')
-        ->where('technician_id', $id)
-        ->first();
-
-        // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos',
-        //     's.id_specialist', 's.category', 'u.id', 'u.name', 'u.email', 'u.phone'
-        // )
-        // ->join('specialization AS s', 'technician.specialist_id', '=', 's.id_specialist')
-        // ->join('users AS u', 'technician.user_id', '=', 'u.id')
+        // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
+        // ->with('user:id,name,email,phone')
+        // ->with('specialization:id_specialist,category')
+        // ->where('technician_id', $id)
         // ->first();
+
+        $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos',
+            's.id_specialist', 's.category', 'u.id', 'u.name', 'u.email', 'u.phone'
+        )
+        ->join('specialization AS s', 'technician.specialist_id', '=', 's.id_specialist')
+        ->join('users AS u', 'technician.user_id', '=', 'u.id')
+        ->first();
         return response()->json(['tech' => $tech]);
     }
 

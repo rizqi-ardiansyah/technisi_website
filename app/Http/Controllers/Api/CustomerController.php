@@ -10,20 +10,22 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CustomerRequest;
+use App\Http\Requests\TransactionRequest;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\File;
 
 class CustomerController extends Controller {
-
     public function showAll(){
-        $cust = Customer::select('cust_id', 'address', 'user_id')
-        ->with('user:id,name,email,phone')->get();
+        $cust = Customer::select('cust_id', 'address', 'user_id', 'u.name', 'u.email', 'u.phone', 'u.username')
+        ->join('users AS u', 'customer.user_id', '=', 'u.id')->get();
+        // $cust = Customer::select('cust_id', 'address', 'user_id')
+        // ->with('user:id,name,email,phone')->get();
         return response()->json(['cust' => $cust]);
     }
 
     public function showCust($id){
-        $cust = Customer::select('cust_id', 'address', 'photos', 'user_id')
-        ->with('user:id,name,email,phone')
+        $cust = Customer::select('cust_id', 'address', 'user_id', 'u.name', 'u.email', 'u.phone', 'u.username')
+        ->join('users AS u', 'customer.user_id', '=', 'u.id')
         ->where('cust_id', $id)->first();
         return response()->json(['cust' => $cust]);
     }

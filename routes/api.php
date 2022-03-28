@@ -30,8 +30,9 @@ Route::prefix('technician/')->group(function(){
 });
 
 Route::prefix('transaction/')->group(function(){
+    Route::post('create', [TransactionController::class, 'createTrans'])->name('create.trans');
     Route::get('list', [TransactionController::class, 'showAll'])->name('show.all.trans');
     Route::get('{id}/detail', [TransactionController::class, 'showTrans'])->name('show.trans');
     Route::delete('{id}/delete', [TransactionController::class, 'destroy'])->name('delete.trans');
-    //Route::put('{id}/update', [TransactionController::class, 'updateTech'])->name('update.tech');
+    Route::put('{id}/update', [TransactionController::class, 'updateTrans'])->name('update.trans');
 });
