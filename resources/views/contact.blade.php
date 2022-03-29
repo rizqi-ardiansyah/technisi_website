@@ -32,7 +32,7 @@
                         <div class="col-lg-3">
                             <div class="brand">
                                 <a href="index.html">
-                                    CleanMe
+                                    TechNisi
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
                             </div>
@@ -109,7 +109,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p>Contact Us</p>
-                        <h2>Find Your Answer / Send Message</h2>
+                        <h2>Temukan Jawaban / Kirim Pesan</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -118,7 +118,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                                <span>1</span> Lorem ipsum dolor sit amet?
+                                                <span>1</span> Servis apa saja yang bisa dikerjakan?
                                             </a>
                                         </div>
                                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -130,7 +130,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                                <span>2</span> Lorem ipsum dolor sit amet?
+                                                <span>2</span> Berapa lama proses perbaikan?
                                             </a>
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -142,7 +142,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                                <span>3</span> Lorem ipsum dolor sit amet?
+                                                <span>3</span> Berapa biaya untuk servis?
                                             </a>
                                         </div>
                                         <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -154,7 +154,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                                <span>4</span> Lorem ipsum dolor sit amet?
+                                                <span>4</span> Bagaimana cara memesan servis?
                                             </a>
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordion">
@@ -166,7 +166,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                                <span>5</span> Lorem ipsum dolor sit amet?
+                                                <span>5</span> Kapan hari kerja untuk teknisi servis?
                                             </a>
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordion">
@@ -183,19 +183,19 @@
                                 <form>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Your Name" required="required" />
+                                            <input type="text" class="form-control" placeholder="Nama Anda" required="required" />
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" placeholder="Your Email" required="required" />
+                                            <input type="email" class="form-control" placeholder="Email Anda" required="required" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" required="required" />
+                                        <input type="text" class="form-control" placeholder="Subjek" required="required" />
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="6" placeholder="Message" required="required" ></textarea>
+                                        <textarea class="form-control" rows="6" placeholder="Pesan" required="required" ></textarea>
                                     </div>
-                                    <div><button class="btn" type="submit">Send Message</button></div>
+                                    <div><button class="btn" type="submit">Kirim Pesan</button></div>
                                 </form>
                             </div>
                         </div>

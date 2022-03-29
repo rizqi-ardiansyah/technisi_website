@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CleanMe - Cleaning Company Website Template</title>
+        <title>TechNisi</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -32,7 +32,7 @@
                         <div class="col-lg-3">
                             <div class="brand">
                                 <a href="index.html">
-                                    CleanMe
+                                    TechNisi
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
                             </div>
@@ -43,7 +43,7 @@
                                     <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+012 345 67890</a>
                                 </div>
                                 <div class="topbar-col">
-                                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>info@example.com</a>
+                                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>technisi@gmail.com</a>
                                 </div>
                                 <div class="topbar-col">
                                     <div class="topbar-social">
@@ -86,26 +86,26 @@
                     <div class="hero row align-items-center">
                         <div class="col-md-7">
                             <h2>Best & Trusted</h2>
-                            <h2><span>Cleaning</span> Service</h2>
-                            <p>Lorem ipsum dolor sit amet elit pretium facilisis ornare</p>
-                            <a class="btn" href="">Explore Now</a>
+                            <h2><span>Website</span> Service</h2>
+                            <p>Temukan Teknisi Servis Terdekat</p>
+                            <a class="btn" href="">Cari Sekarang</a>
                         </div>
                         <div class="col-md-5">
                             <div class="form">
-                                <h3>Get A Quote</h3>
+                                <h3>Dapatkan Penawaran</h3>
                                 <form>
-                                    <input class="form-control" type="text" placeholder="Your Name">
-                                    <input class="form-control" type="text" placeholder="Mobile Number">
+                                    <input class="form-control" type="text" placeholder="Nama Anda">
+                                    <input class="form-control" type="text" placeholder="Nomor Telepon">
                                     <div class="control-group">
                                         <select class="custom-select">
-                                            <option selected>Choose a service</option>
-                                            <option value="1">House Cleaning</option>
-                                            <option value="2">Apartment Cleaning</option>
-                                            <option value="3">Office Cleaning</option>
+                                            <option selected>Pilih Servis</option>
+                                            <option value="1">Servis Elektronik</option>
+                                            <option value="2">Servis Perabotan</option>
+                                            <option value="3">Servis Laptop</option>
                                         </select>
                                     </div>
-                                    <textarea class="form-control" placeholder="Comment"></textarea>
-                                    <button class="btn btn-block">Get A Quote</button>
+                                    <textarea class="form-control" placeholder="Komentar"></textarea>
+                                    <button class="btn btn-block">Dapatkan Penawaran</button>
                                 </form>
                             </div>
                         </div>
@@ -126,9 +126,9 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-text">
-                                <h2><span>10</span> Years Experience</h2>
+                                <h2><span>2</span> Years Experience</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    Aplikasi Teknisi berbasis webiste yang sudah berjalan 2 tahun.
                                 </p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
@@ -202,8 +202,8 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="section-header left">
-                                <p>Why Choose Us</p>
-                                <h2>Expert Cleaners and World Class Services</h2>
+                                <p>Mengapa Memilih Kami</p>
+                                <h2>Teknisi Ahli dan Layanan Terbaik</h2>
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
@@ -216,7 +216,7 @@
                                     <img src="img/feature-1.jpg" alt="Feature">
                                 </div>
                                 <div class="col-7">
-                                    <h3>Expert Cleaners</h3>
+                                    <h3>Teknisi Ahli</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
@@ -227,7 +227,7 @@
                                     <img src="img/feature-2.jpg" alt="Feature">
                                 </div>
                                 <div class="col-7">
-                                    <h3>Reasonable Prices</h3>
+                                    <h3>Harga Terjangkau</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
@@ -238,7 +238,7 @@
                                     <img src="img/feature-3.jpg" alt="Feature">
                                 </div>
                                 <div class="col-7">
-                                    <h3>Quick & Best Services</h3>
+                                    <h3>Layanan Cepat & Terbaik</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
@@ -339,7 +339,7 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="section-header left">
-                                <p>You Might Ask</p>
+                                <p>Anda Mungkin Bertanya</p>
                                 <h2>Frequently Asked Questions</h2>
                             </div>
                             <img src="img/faqs.jpg" alt="Image">
@@ -349,7 +349,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                            <span>1</span> Lorem ipsum dolor sit amet?
+                                            <span>1</span> Servis apa saja yang bisa dikerjakan?
                                         </a>
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -361,7 +361,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                            <span>2</span> Lorem ipsum dolor sit amet?
+                                            <span>2</span> Berapa lama proses perbaikan?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -373,7 +373,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                            <span>3</span> Lorem ipsum dolor sit amet?
+                                            <span>3</span> Berapa biaya untuk servis?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -385,7 +385,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>4</span> Lorem ipsum dolor sit amet?
+                                            <span>4</span> Bagaimana cara memesan servis?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
@@ -397,7 +397,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                            <span>5</span> Kapan hari kerja untuk teknisi servis?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
@@ -407,142 +407,12 @@
                                     </div>
                                 </div> 
                             </div>
-                            <a class="btn" href="">Ask more</a>
+                            <a class="btn" href="">Bertanya Lebih Banyak</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- FAQs End -->
-            
-            
-            <!-- Pricing Plan Start -->
-            <div class="price">
-                <div class="container">
-                    <div class="section-header">
-                        <p>Pricing Plan</p>
-                        <h2>No Extra Hidden Charges</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="price-item">
-                                <div class="price-header">
-                                    <div class="price-icon">
-                                        <i class="fa fa-home"></i>
-                                    </div>
-                                    <div class="price-title">
-                                        <h2>Standard</h2>
-                                    </div>
-                                    <div class="price-pricing">
-                                        <h2><small>$</small>99</h2>
-                                    </div>
-                                </div>
-                                <div class="price-body">
-                                    <div class="price-des">
-                                        <ul>
-                                            <li>3 Bedrooms cleaning</li>
-                                            <li>2 Bathrooms cleaning</li>
-                                            <li>1 Living room Cleaning</li>
-                                            <li>Vacuum Cleaning</li>
-                                            <li>Within 6 Hours</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price-footer">
-                                    <div class="price-action">
-                                        <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="price-item featured-item">
-                                <div class="price-header">
-                                    <div class="price-icon">
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="price-title">
-                                        <h2>Premium</h2>
-                                    </div>
-                                    <div class="price-pricing">
-                                        <h2><small>$</small>149</h2>
-                                    </div>
-                                </div>
-                                <div class="price-body">
-                                    <div class="price-des">
-                                        <ul>
-                                            <li>5 Bedrooms cleaning</li>
-                                            <li>3 Bathrooms cleaning</li>
-                                            <li>2 Living room Cleaning</li>
-                                            <li>Vacuum Cleaning</li>
-                                            <li>Within 6 Hours</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price-footer">
-                                    <div class="price-action">
-                                        <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="price-item">
-                                <div class="price-header">
-                                    <div class="price-icon">
-                                        <i class="fa fa-gift"></i>
-                                    </div>
-                                    <div class="price-title">
-                                        <h2>Enterprise</h2>
-                                    </div>
-                                    <div class="price-pricing">
-                                        <h2><small>$</small>199</h2>
-                                    </div>
-                                </div>
-                                <div class="price-body">
-                                    <div class="price-des">
-                                        <ul>
-                                            <li>8 Bedrooms cleaning</li>
-                                            <li>5 Bathrooms cleaning</li>
-                                            <li>3 Living room Cleaning</li>
-                                            <li>Vacuum Cleaning</li>
-                                            <li>Within 12 Hours</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price-footer">
-                                    <div class="price-action">
-                                        <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Pricing Plan End -->
-            
-            
-            <!-- Newsletter Start -->
-            <div class="newsletter">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-8">
-                            <h2>Get A Free Quote</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet adipiscing elit
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form">
-                                <input class="form-control" placeholder="Email here">
-                                <button class="btn">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Newsletter End -->
-
 
             <!-- Testimonial Start -->
             <div class="testimonial">
@@ -696,7 +566,7 @@
                                 <h2>Get In Touch</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
                                 <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <p><i class="fa fa-envelope"></i>technisi@gmail.com</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
