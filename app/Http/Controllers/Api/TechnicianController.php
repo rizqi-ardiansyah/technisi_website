@@ -16,6 +16,19 @@ use App\Http\Requests\TechnicianRequest;
 use App\Models\Technician;
 
 class TechnicianController extends Controller {
+
+    public function createTech(TechnicianRequest $request){
+        $request->validated();
+        $data = new Technician();
+        $data->specialist_id = $request->specialist_id;
+        $data->user_id = $request->user_id;
+        $data->certification = $request->certification;
+        $data->address = $request->address;
+        $data->photos = $request->photos;
+        $data->save();
+        return response()->json(['message' => 'Technician created successfully']);
+    }
+
     public function showAll(){
         // $tech = Technician::select('technician_id', 'specialist_id', 'user_id', 'certification', 'address', 'photos')
         // ->with('user:id,name,email,phone')
