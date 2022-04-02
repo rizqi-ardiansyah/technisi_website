@@ -23,6 +23,26 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/penggunaanTemplate', function () {
+    return view('guest_side.penggunaanTemplateEngine', [
+        'title' => 'Beranda',
+    ]);
+});
+Route::get('/login_', function () {
+    return view('guest_side.login', [
+        'title' => 'Login Page',
+    ]);
+});
+Route::get('/register_', function () {
+    return view('guest_side.register', [
+        'title' => 'Register Page',
+    ]);
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
