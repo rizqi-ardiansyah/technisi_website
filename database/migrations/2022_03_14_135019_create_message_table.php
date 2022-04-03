@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('file', 100)->nullable();
             $table->unsignedBigInteger('sender');
             $table->unsignedBigInteger('receiver');
+            $table->string('file_name', 225)->nullable();
             $table->timestamps();
 
             $table->foreign('sender')->references('id')->on('users')->cascadeOnDelete();

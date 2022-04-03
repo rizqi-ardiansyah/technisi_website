@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 
 /*
@@ -37,6 +39,12 @@ Route::get('/register_', function () {
     return view('guest_side.register', [
         'title' => 'Register Page',
     ]);
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/inbox', [MessageController::class, 'index'])->name('inbox.index');
+    Route::get('/inbox/{id}', [MessageController::class, 'show'])->name('inbox.show');
 });
 
 Auth::routes();

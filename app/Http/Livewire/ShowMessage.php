@@ -2,26 +2,29 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\User;
 use App\Models\Message;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Storage;
 
-class MessageIndex extends Component {
+class ShowMessage extends Component {
     use WithFileUploads;
 
     public $cust;
     public $tech;
     public $message = '';
     public $admin;
-    public $clicked;
+    public $sender;
+    public $is_seen;
     public $file;
+    public $file_name;
 
     public function render() {
-        return view('livewire.message-index', [
+        return view('livewire.show-message', [
             'cust' => $this->cust,
             'tech' => $this->tech,
+            'message' => $this->message,
+            'sender' => $this->sender,
         ]);
     }
 
@@ -46,50 +49,34 @@ class MessageIndex extends Component {
                                             ->orderBy('created_at', 'desc')
                                             ->get();
         }
+        $is_seen = Message::Where('receiver', auth()->user()->id)
+                            ->where('receiver', auth()->user()->id)
+                            ->get();
+        $is_seen->update(['is_seen' => true]);
     }
 
     public function sendMessage(){
         $new_msg = new Message();
         $new_msg->message = $this->message;
         $new_msg->sender = auth()->user()->id;
+        $new_msg->receiver = auth()->user();
 
-        if(auth()->user()->id_role == 2){
-            $new_msg->receiver = $this->cust;
-        } else if(auth()->user()->id_role == 3){
-            $new_msg->receiver = $this->tech;
-        } else if(auth()->user()->id_role == 1){
-            $new_msg->receiver = $this->admin;
-        }
-
-        if($this->file) {
-            $file = $this->file->store('public/assets/docs');
-            $path = url(Storage::url($file));
-            $new_msg->file = $path;
-            $new_msg->file_name = $this->file->getClientOriginalName();
+        if($this->file){
+            $upload = $this->uploadFile();
+            $new_msg->file = $upload[0];
+            $new_msg->file_name = $upload[1];
         }
         $new_msg->save();
 
-        $this->reset(['message']);
+        $this->reset('message');
         $this->file = '';
-    }
-
-    public function getUser($id){
-        $this->clicked = User::where('id', $id);
-        if(auth()->user()->id_role == 2){
-            $this->message = Message::where('sender', auth()->user()->id)
-                                            ->orWhere('receiver', $id)
-                                            ->orderBy('created_at', 'desc')
-                                            ->get();
-        } else if(auth()->user()->id_role == 3){
-            $this->message = Message::where('sender', auth()->user()->id)
-                                            ->orWhere('receiver', $this->tech)
-                                            ->orderBy('created_at', 'desc')
-                                            ->get();
-        }
 
     }
 
-    public function resetFiles(){
-        $this->reset('file');
+    public function uploadFile() {
+        $file = $this->file->store('public/assets/docs');
+        $path = url(Storage::url($file));
+        $file_name = $this->file->getClientOriginalName();
+        return [$path, $file_name];
     }
 }
