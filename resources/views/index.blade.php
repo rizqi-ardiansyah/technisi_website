@@ -64,10 +64,10 @@
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
                                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                                        <a href="about.html" class="nav-item nav-link">About</a>
-                                        <a href="service.html" class="nav-item nav-link">Service</a>
-                                        <a href="portfolio.html" class="nav-item nav-link">Project</a>
-                                        <a href="single.html" class="nav-item nav-link">Single</a>
+                                        <a href="about.html" class="nav-item nav-link">Tentang</a>
+                                        <a href="service.html" class="nav-item nav-link">Servis</a>
+                                        <a href="portfolio.html" class="nav-item nav-link">Order</a>
+                                        <a href="single.html" class="nav-item nav-link">Chat</a>
                                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                                         <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
@@ -255,8 +255,8 @@
             <div class="team">
                 <div class="container">
                     <div class="section-header">
-                        <p>Team Member</p>
-                        <h2>Meet Our Expert Cleaners</h2>
+                        <p>Tim Member</p>
+                        <h2>Temukan Teknisi Terbaik Kami</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
@@ -266,7 +266,7 @@
                                 </div>
                                 <div class="team-text">
                                     <h2>Josh Dunn</h2>
-                                    <h3>CEO</h3>
+                                    <h3>Teknisi TV</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -283,7 +283,7 @@
                                 </div>
                                 <div class="team-text">
                                     <h2>Mollie Ross</h2>
-                                    <h3>Team Manager</h3>
+                                    <h3>Teknisi Kulkas</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -300,7 +300,7 @@
                                 </div>
                                 <div class="team-text">
                                     <h2>Dylan Adams</h2>
-                                    <h3>Cleaner</h3>
+                                    <h3>Teknisi AC</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -313,11 +313,11 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
+                                    <img src="img/team-1.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Jennifer Page</h2>
-                                    <h3>Cleaner</h3>
+                                    <h2>Nathan Ruwana</h2>
+                                    <h3>Teknisi Mebel</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -418,8 +418,8 @@
             <div class="testimonial">
                 <div class="container">
                     <div class="section-header">
-                        <p>Client Review</p>
-                        <h2>Client Says About Service</h2>
+                        <p>Review Klien</p>
+                        <h2>Review Klien Tentang Servis</h2>
                     </div>
                     <div class="owl-carousel testimonials-carousel">
                         <div class="testimonial-item">
@@ -474,33 +474,13 @@
                 </div>
             </div>
             <!-- Testimonial End -->
-            
-            
-            <!-- Call to Action Start -->
-            <div class="call-to-action">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9">
-                            <h2>Get A Free Cleaning Service</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <a class="btn" href="https://htmlcodex.com/contact">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Call to Action End -->
-
 
             <!-- Blog Start -->
             <div class="blog">
                 <div class="container">
                     <div class="section-header">
-                        <p>Latest From Blog</p>
-                        <h2>Stay Updated From Our Blog</h2>
+                        <p>Terbaru Dari Blog</p>
+                        <h2>Tetap Update dari Blog kami</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -509,7 +489,7 @@
                                 <h3>Lorem ipsum dolor</h3>
                                 <div class="meta">
                                     <i class="fa fa-list-alt"></i>
-                                    <a href="">Flour Cleaning</a>
+                                    <a href="">Servis TV</a>
                                     <i class="fa fa-calendar-alt"></i>
                                     <p>11-Jun-20</p>
                                 </div>
@@ -525,7 +505,7 @@
                                 <h3>Lorem ipsum dolor</h3>
                                 <div class="meta">
                                     <i class="fa fa-list-alt"></i>
-                                    <a href="">Glass Cleaning</a>
+                                    <a href="">Servis AC</a>
                                     <i class="fa fa-calendar-alt"></i>
                                     <p>11-Jun-20</p>
                                 </div>
@@ -541,7 +521,7 @@
                                 <h3>Lorem ipsum dolor</h3>
                                 <div class="meta">
                                     <i class="fa fa-list-alt"></i>
-                                    <a href="">Carpet Cleaning</a>
+                                    <a href="">Servis Kulkas</a>
                                     <i class="fa fa-calendar-alt"></i>
                                     <p>11-Jun-20</p>
                                 </div>
@@ -559,73 +539,8 @@
 
             <!-- Footer Start -->
             <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>technisi@gmail.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Link</h2>
-                                <a href="">About Us</a>
-                                <a href="">Our Story</a>
-                                <a href="">Our Services</a>
-                                <a href="">Our Projects</a>
-                                <a href="">Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Link</h2>
-                                <a href="">Our Clients</a>
-                                <a href="">Clients Review</a>
-                                <a href="">Ongoing Project</a>
-                                <a href="">Customer Support</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-form">
-                                <h2>Stay Updated</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                                <input class="form-control" placeholder="Email here">
-                                <button class="btn">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container footer-menu">
-                    <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help & FQAs</a>
-                        <a href="">Contact us</a>
-                    </div>
-                </div>
                 <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
-                    </div>
+                    <p class="text-center">&copy; Copyright 2022 Kelompok 1 - All Right Reserved.</p>
                 </div>
             </div>
             <!-- Footer End -->
