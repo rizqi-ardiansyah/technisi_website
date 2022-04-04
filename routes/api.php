@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 
 Route::prefix('customer/')->group(function(){
+    Route::post('create', [CustomerController::class, 'createCust'])->name('create.cust');
     Route::get('list', [CustomerController::class, 'showAll'])->name('show.all');
     Route::get('{id}/detail', [CustomerController::class, 'showCust'])->name('show.cust');
     Route::delete('{id}/delete', [CustomerController::class, 'destroy'])->name('delete.cust');

@@ -16,6 +16,16 @@ use Illuminate\Support\Facades\File;
 
 class CustomerController extends Controller {
 
+    public function createCust(CustomerRequest $request){
+        $request->validated();
+        $data = new Customer();
+        $data->name = $request->name;
+        $data->address = $request->address;
+        $data->user_id = $request->user_id;
+        $data->save();
+        return response()->json(['message' => 'Customer created successfully']);
+    }
+
     public function updateTrans(TransactionRequest $req, $id){
         $req->validated();
         $data = Transaction::select('desc', 'price')
