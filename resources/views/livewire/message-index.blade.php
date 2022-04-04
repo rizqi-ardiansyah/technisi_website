@@ -1,6 +1,6 @@
 <div>
     <div class="row justify-content-center" wire:poll="mountComponent()">
-        @if(auth()->user()->role == 2 || auth()->user()->role == 3)
+        @if(auth()->user()->id_role == 2 || auth()->user()->id_role == 3)
             <div class="col-md-4" wire:init>
                 <div class="card">
                     <div class="card-header">
@@ -32,9 +32,9 @@
                 <div class="card-header">
                     @if(isset($clicked)) {{ $clicked->name }}
 
-                    @elseif(auth()->user()->role == 2)
+                    @elseif(auth()->user()->id_role == 2)
                         Select a user to see the chat
-                    @elseif(auth()->user()->role == 3)
+                    @elseif(auth()->user()->id_role == 3)
                         Select a user to see the chat
                     @else
                         Messages
@@ -72,12 +72,12 @@
                             @else
                                 No messages to show
                             @endif
-                            @if(!isset($clicked) and auth()->user()->role == 2 || !isset($clicked) and auth()->user()->role == 3)
+                            @if(!isset($clicked) and auth()->user()->id_role == 2 || !isset($clicked) and auth()->user()->id_role == 3)
                                 Click on a user to see the messages
                             @endif
                         @endif
                     </div>
-                @if(auth()->user()->role == 2 || auth()->user()->role == 3)
+                @if(auth()->user()->id_role == 2 || auth()->user()->id_role == 3)
                     <div class="card-footer">
                         <form wire:submit.prevent="SendMessage" enctype="multipart/form-data">
                             <div wire:loading wire:target='SendMessage'>
