@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CleanMe - Cleaning Company Website Template</title>
+        <title>TechNisi</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
@@ -32,7 +32,7 @@
                         <div class="col-lg-3">
                             <div class="brand">
                                 <a href="index.html">
-                                    CleanMe
+                                    TechNisi
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
                             </div>
@@ -63,20 +63,12 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="index.html" class="nav-item nav-link">Home</a>
-                                        <a href="about.html" class="nav-item nav-link">About</a>
-                                        <a href="service.html" class="nav-item nav-link active">Service</a>
-                                        <a href="portfolio.html" class="nav-item nav-link">Project</a>
-                                        <a href="single.html" class="nav-item nav-link">Single</a>
-                                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <div class="dropdown-menu">
-                                                <a href="#" class="dropdown-item">Sub Item 1</a>
-                                                <a href="#" class="dropdown-item">Sub Item 2</a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn">Get A Quote</a>
+                                    <a href="index" class="nav-item nav-link active">Home</a>
+                                        <a href="about" class="nav-item nav-link">Tentang</a>
+                                        <a href="service" class="nav-item nav-link">Servis</a>
+                                        <a href="" class="nav-item nav-link">Order</a>
+                                        <a href="" class="nav-item nav-link">Chat</a>
+                                        <a href="contact" class="nav-item nav-link">Contact</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,11 +84,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Our Services</h2>
+                            <h2>Layanan Kami</h2>
                         </div>
                         <div class="col-12">
                             <a href="">Home</a>
-                            <a href="">Our Services</a>
+                            <a href="">Servis</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +100,6 @@
             <div class="service">
                 <div class="container">
                     <div class="section-header">
-                        <p>Layanan Kami</p>
                         <h2>Menyediakan Layanan di Seluruh Indonesia</h2>
                     </div>
                     <div class="row">
@@ -215,73 +206,8 @@
 
             <!-- Footer Start -->
             <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Link</h2>
-                                <a href="">About Us</a>
-                                <a href="">Our Story</a>
-                                <a href="">Our Services</a>
-                                <a href="">Our Projects</a>
-                                <a href="">Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-link">
-                                <h2>Useful Link</h2>
-                                <a href="">Our Clients</a>
-                                <a href="">Clients Review</a>
-                                <a href="">Ongoing Project</a>
-                                <a href="">Customer Support</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-form">
-                                <h2>Stay Updated</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                                <input class="form-control" placeholder="Email here">
-                                <button class="btn">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container footer-menu">
-                    <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help & FQAs</a>
-                        <a href="">Contact us</a>
-                    </div>
-                </div>
                 <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
-                    </div>
+                    <p class="text-center">&copy; Copyright 2022 Kelompok 1 - All Right Reserved.</p>
                 </div>
             </div>
             <!-- Footer End -->
