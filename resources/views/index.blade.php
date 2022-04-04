@@ -63,20 +63,12 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                                        <a href="about.html" class="nav-item nav-link">Tentang</a>
-                                        <a href="service.html" class="nav-item nav-link">Servis</a>
-                                        <a href="portfolio.html" class="nav-item nav-link">Order</a>
-                                        <a href="single.html" class="nav-item nav-link">Chat</a>
-                                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <div class="dropdown-menu">
-                                                <a href="#" class="dropdown-item">Sub Item 1</a>
-                                                <a href="#" class="dropdown-item">Sub Item 2</a>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn">Get A Quote</a>
+                                        <a href="index" class="nav-item nav-link active">Home</a>
+                                        <a href="about" class="nav-item nav-link">Tentang</a>
+                                        <a href="service" class="nav-item nav-link">Servis</a>
+                                        <a href="" class="nav-item nav-link">Order</a>
+                                        <a href="" class="nav-item nav-link">Chat</a>
+                                        <a href="contact" class="nav-item nav-link">Contact</a>
                                     </div>
                                 </div>
                             </div>
