@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="utf-8">
-    <title>{{ $title }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Cleaning Company Website Template" name="keywords">
     <meta content="Cleaning Company Website Template" name="description">
@@ -30,9 +29,9 @@
 
 <body>
 
-    @include('guest_side.partials.header')
+    @include('partials.header')
     @yield('content')
-    @include('guest_side.partials.footer')
+    @include('partials.footer')
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
