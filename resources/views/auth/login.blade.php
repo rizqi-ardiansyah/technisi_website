@@ -11,10 +11,11 @@
             <div class="hero row align-items-center">
                 <div class="container" id="containerlogin">
                     <img src="/img/logo_technician.png" class="mx-auto d-block">
-                    <form action="#" class="form-login" method="POST" autocomplete="off">
+                    <form action="" class="form-login" method="POST" autocomplete="off">
+                        @csrf
                         <input class="form-control shadow-sm" name="username" id="username" type="text" placeholder="Username">
                         <input class="form-control shadow-sm" name="password" id="password" type="password" placeholder="Password">
-                        <button type="submit" class="btn btn-success shadow-sm border-0">Login</button>
+                        <input type="submit" name="submit" class="btn btn-success shadow-sm border-0" value="Login">
                     </form>
                     <div class="d-flex justify-content-between text-bawah">
                         <div class="mt-2"><a href="/register_">Register</a></div>
