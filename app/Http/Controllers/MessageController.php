@@ -12,9 +12,9 @@ class MessageController extends Controller {
         $tech = User::where('id_role', '=', 3)->orderBy('id', 'DESC')->get();
 
         if(auth()->user()->id_role == 2){
-            return view('message.index', compact('cust'));
+            return view('livewire.message-index', compact('cust'));
         } else if(auth()->user()->id_role == 3){
-            return view('message.index', compact('tech'));
+            return view('livewire.message.index', compact('tech'));
         }
     }
 
