@@ -8,9 +8,9 @@
                     </div>
                     <div class="card-body chatbox p-0">
                         <ul class="list-group list-group-flush" wire:poll="render">
-                            @foreach($users as $user)
+                            @foreach($cust as $user)
                                 @php
-                                    $is_seen = Message::where('sender', $user->id)->where('receiver', auth()->id())->where('is_seen', false)->get() ?? null
+                                    $is_seen = App\Models\Message::where('sender', $user->user_id)->where('receiver', auth()->id())->where('is_seen', false)->get() ?? null
                                 @endphp
                                 <a href="{{ route('inbox.show', $user->id) }}" class="text-dark link">
                                     <li class="list-group-item" wire:click="getUser({{ $user->id }})" id="user_{{ $user->id }}">
@@ -47,7 +47,7 @@
                             @if(isset($message))
                                 @foreach($message as $messages)
                                     <div class="single-message @if($messages->user_id !== auth()->id()) received @else sent @endif">
-                                        <p class="font-weight-bolder my-0">{{ $messages->user->name }}</p>
+                                        <p class="font-weight-bolder my-0">{{ $messages->users->name }}</p>
                                         <p class="my-0">{{ $messages->message }}</p>
                                         @if (isPhoto($messages->file))
                                             <div class="w-100 my-2">
