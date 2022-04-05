@@ -47,13 +47,13 @@
                             @if(isset($message))
                                 @foreach($message as $messages)
                                     <div class="single-message @if($messages->user_id !== auth()->id()) received @else sent @endif">
-                                        <p class="font-weight-bolder my-0">{{ $messages->users->name }}</p>
+                                        {{-- <p class="font-weight-bolder my-0">{{ $messages->users->name }}</p> --}}
                                         <p class="my-0">{{ $messages->message }}</p>
-                                        @if (isPhoto($messages->file))
+                                        {{-- @if (isPhoto($messages->file))
                                             <div class="w-100 my-2">
                                                 <img class="img-fluid rounded" loading="lazy" style="height: 250px" src="{{ $message->file }}">
-                                            </div>
-                                        @elseif (isVideo($messages->file))
+                                            </div> --}}
+                                        {{-- @elseif (isVideo($messages->file))
                                             <div class="w-100 my-2">
                                                 <video style="height: 250px" class="img-fluid rounded" controls>
                                                     <source src="{{ $messages->file }}">
@@ -65,7 +65,7 @@
                                                     {{ $messages->file_name }}
                                                 </a>
                                             </div>
-                                        @endif
+                                        @endif --}}
                                         <small class="text-muted w-100">Sent <em>{{ $messages->created_at }}</em></small>
                                     </div>
                                 @endforeach
@@ -86,18 +86,18 @@
                             <div wire:loading wire:target="file">
                                 Uploading file . . .
                             </div>
-                            @if($file)
+                            {{-- @if($file)
                                 <div class="mb-2">
                                    You have an uploaded file <button type="button" wire:click="resetFile" class="btn btn-danger btn-sm"><i class="fa fa-times"></i> Remove {{ $file->getClientOriginalName() }}</button>
                                 </div>
                             @else
                                 No file is uploaded.
-                            @endif
+                            @endif --}}
                             <div class="row">
-                                <div class="col-md-7">
+                                {{-- <div class="col-md-7">
                                     <input wire:model="message" class="form-control input shadow-none w-100 d-inline-block" placeholder="Type a message" @if(!$file) required @endif>
-                                </div>
-                                @if(empty($file))
+                                </div> --}}
+                                {{-- @if(empty($file))
                                 <div class="col-md-1">
                                     <button type="button" class="border" id="file-area">
                                         <label>
@@ -106,7 +106,7 @@
                                         </label>
                                     </button>
                                 </div>
-                                @endif
+                                @endif --}}
                                 <div class="col-md-4">
                                     <button class="btn btn-primary d-inline-block w-100"><i class="far fa-paper-plane"></i> Send</button>
                                 </div>
