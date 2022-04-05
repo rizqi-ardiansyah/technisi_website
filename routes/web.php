@@ -44,7 +44,7 @@ Route::get('/register_', function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/inbox', [MessageController::class, 'index'])->name('inbox.index');
     Route::get('/inbox/{id}', [MessageController::class, 'show'])->name('inbox.show');
 });
@@ -55,8 +55,8 @@ Route::get('/service', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
