@@ -19,19 +19,30 @@ use Illuminate\Support\Facades\Storage;
 
 Route::prefix('/')->group(function () {
     Route::get('index', function () {
-        return view('index');
-    });
-    Route::get('contact', function () {
-        return view('contact');
-    });
-    Route::get('about', function () {
-        return view('about');
-    });
-    Route::get('/service', function () {
-        return view('service');
-    });
+        return view('index', [
+            'title'=> 'Home'
+        ]);
+    })->name('index.home');
 
-    Route::get('/indexTeknisi', function () {
+    Route::get('service', function () {
+        return view('service', [
+            'title' => 'Service'
+        ]);
+    })->name('service.home');
+
+    Route::get('contact', function () {
+        return view('contact', [
+            'title' => 'Contact'
+        ]);
+    })->name('contact.home');
+
+    Route::get('about', function () {
+        return view('about', [
+            'title' => 'About'
+        ]);
+    })->name('about.home');
+
+    Route::get('indexTeknisi', function () {
         return view('teknisi/indexTeknisi');
     });
 });
@@ -39,12 +50,8 @@ Route::prefix('/')->group(function () {
 
 Route::group(['middleware' => 'auth'], function () {
     //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/inbox', [MessageController::class, 'index'])->name('inbox.index');
-    Route::get('/inbox/{id}', [MessageController::class, 'show'])->name('inbox.show');
-});
-
-Route::get('/service', function () {
-    return view('service');
+    Route::get('/inbox', [MessageController::class, 'index', 'title' => 'Message'])->name('inbox.index');
+    Route::get('/inbox/{id}', [MessageController::class, 'show', 'title' => 'Message'])->name('inbox.show');
 });
 
 Auth::routes();

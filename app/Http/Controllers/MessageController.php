@@ -17,6 +17,7 @@ class MessageController extends Controller {
                 'cust' => $cust,
                 'message' => $messages,
                 'tech' => $tech,
+                'title' => 'Message'
             ]);
         }
     }
