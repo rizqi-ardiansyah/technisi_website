@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Storage;
 */
 
 Route::prefix('/')->group(function () {
-    Route::get('index', function () {
+    Route::get('', function () {
         return view('index', [
             'title'=> 'Home'
         ]);
@@ -42,8 +42,10 @@ Route::prefix('/')->group(function () {
         ]);
     })->name('about.home');
 
-    Route::get('indexTeknisi', function () {
-        return view('teknisi/indexTeknisi');
+    Route::get('tec', function () {
+        return view('teknisi.technician', [
+            'title' => 'Teknisi'
+        ]);
     });
 });
 
