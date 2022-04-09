@@ -18,11 +18,11 @@ use Illuminate\Support\Facades\Storage;
 */
 
 Route::prefix('/')->group(function () {
-    Route::get('login', function () {
+    Route::get('login-page', function () {
         return view('auth.login', ['title' => 'Login']);
     })->name('login.auth');
 
-    Route::get('register', function () {
+    Route::get('register-page', function () {
         return view('auth.register', ['title' => 'Register']);
     })->name('register.auth');
 

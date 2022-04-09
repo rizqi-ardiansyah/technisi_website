@@ -6,7 +6,7 @@
             <div class="hero row align-items-center">
                     <img src="/img/logo_technician.png" class="mx-auto d-block" style="width: 250px;">
                     <center>
-                        <form action="{{ route('login.auth') }}" class="form-login" method="POST" autocomplete="off">
+                        <form action="{{ route('login') }}" class="form-login" method="POST" autocomplete="off">
                             @csrf
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control shadow-sm @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
@@ -19,7 +19,7 @@
                             </div>
                         </form>
                         <div class="d-flex justify-content-between text-bawah col-md-6">
-                            <div class="mt-2"><a href="{{ route('register.auth') }}">Register</a></div>
+                            <div class="mt-2"><a href="{{ route('register') }}">Register</a></div>
                             <div class="mt-2"><a href="#">Forgot Password?</a></div>
                         </div>
                     </center>

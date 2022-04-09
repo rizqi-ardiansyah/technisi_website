@@ -11,7 +11,7 @@ class MessageController extends Controller {
     public function index(){
         $cust = User::where('id_role', '=', 2)->orderBy('id', 'DESC')->get();
         $tech = User::where('id_role', '=', 3)->orderBy('id', 'DESC')->get();
-        $messages = Message::where('sender', auth()->id())->orWhere('receiver', auth()->id())->orderBy('msg_id', 'DESC')->get();
+        $messages = Message::where('receiver', auth()->id())->orderBy('msg_id', 'DESC')->get();
         if(auth()->user()->id_role == 2 || auth()->user()->id_role == 3){
             return view('livewire.message-index', [
                 'cust' => $cust,
