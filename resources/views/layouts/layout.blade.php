@@ -6,6 +6,8 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -63,13 +65,13 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="index" class="nav-item nav-link {{ ($title == 'Home') ? 'active' : '' }}">Home</a>
+                                        <a href="/" class="nav-item nav-link {{ ($title == 'Home') ? 'active' : '' }}">Home</a>
                                         <a href="about" class="nav-item nav-link {{ ($title == 'About') ? 'active' : '' }}">Tentang</a>
                                         <a href="service" class="nav-item nav-link {{ ($title == 'Service') ? 'active' : '' }}">Servis</a>
                                         <a href="" class="nav-item nav-link">Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
                                         <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
-                                        <a href={{ route('login') }} class="btn">Login</a>
+                                        <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
                                     </div>
                                 </div>
                             </div>

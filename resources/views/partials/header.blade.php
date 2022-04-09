@@ -41,7 +41,7 @@
                                         <a href="" class="nav-item nav-link">Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
                                         <a href="contact" class="nav-item nav-link">Contact</a>
-                                        <a href={{ route('login') }} class="btn">Login</a>
+                                       <a href={{ route('login') }} class="nav-item nav-link active">Login</a>
                                     </div>
                                 </div>
                             </div>

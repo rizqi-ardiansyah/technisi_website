@@ -18,6 +18,14 @@ use Illuminate\Support\Facades\Storage;
 */
 
 Route::prefix('/')->group(function () {
+    Route::get('login', function () {
+        return view('auth.login', ['title' => 'Login']);
+    })->name('login.auth');
+
+    Route::get('register', function () {
+        return view('auth.register', ['title' => 'Register']);
+    })->name('register.auth');
+
     Route::get('', function () {
         return view('index', [
             'title'=> 'Home'
@@ -56,10 +64,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/inbox/{id}', [MessageController::class, 'show', 'title' => 'Message'])->name('inbox.show');
 });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

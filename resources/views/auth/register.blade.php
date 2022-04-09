@@ -1,10 +1,5 @@
-@extends('layouts.main')
-@section('content')
-
-<head>
-    <title>Register Page</title>
-</head>
-
+@extends('layouts.layout')
+@section('main-content')
 <body>
     <div class="header home">
         <div class="container-fluid">

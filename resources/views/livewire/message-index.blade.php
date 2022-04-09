@@ -1,3 +1,8 @@
+<head>
+    <title>TechNisi | Message</title>
+    <link rel="icon" href={{ asset('assets/image/logo/icon.ico') }}>
+</head>
+
 <div>
     <div class="row justify-content-center" wire:poll="mountComponent()">
         @if(auth()->user()->id_role == 2 || auth()->user()->id_role == 3)
