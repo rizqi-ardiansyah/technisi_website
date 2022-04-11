@@ -7,12 +7,16 @@
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
 
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
+        <link rel="icon" href={{ asset('assets/image/logo/icon.ico') }}>
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
-        
+
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,7 +35,7 @@
                     <div class="header-top row align-items-center">
                         <div class="col-lg-3">
                             <div class="brand">
-                                <a href="index.html">
+                                <a href="{{ route('teknisi.index') }}">
                                     TechNisi
                                     <!-- <img src="img/logo.png" alt="Logo"> -->
                                 </a>
@@ -63,8 +67,8 @@
 
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
-                                        <a href="indexTeknisi" class="nav-item nav-link active">Home</a>
-                                        <a href="" class="nav-item nav-link">Detail Order</a>
+                                        <a href="{{ route('teknisi.index') }}" class="nav-item nav-link active">Home</a>
+                                        <a href="" class="nav-item nav-link">Riwayat Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
                                         <a href="" class="nav-item nav-link">Profil</a>
                                         <a href="" class="nav-item nav-link">Log Out</a>
@@ -73,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="hero row align-items-center">
                         <div class="col-md-7">
                             <h2>Best & Trusted</h2>
@@ -93,7 +97,6 @@
                 </div>
             </div>
             <!-- Footer End -->
-            
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
 

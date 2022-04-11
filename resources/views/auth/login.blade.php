@@ -19,7 +19,7 @@
                             </div>
                         </form>
                         <div class="d-flex justify-content-between text-bawah col-md-6">
-                            <div class="mt-2"><a href="{{ route('register') }}">Register</a></div>
+                            <div class="mt-2"><a href="{{ route('register.auth') }}">Register</a></div>
                             <div class="mt-2"><a href="#">Forgot Password?</a></div>
                         </div>
                     </center>

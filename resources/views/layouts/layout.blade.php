@@ -6,12 +6,14 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
         <link rel="icon" href={{ asset('assets/image/logo/icon.ico') }}>
+
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
 
@@ -68,10 +70,29 @@
                                         <a href="/" class="nav-item nav-link {{ ($title == 'Home') ? 'active' : '' }}">Home</a>
                                         <a href="about" class="nav-item nav-link {{ ($title == 'About') ? 'active' : '' }}">Tentang</a>
                                         <a href="service" class="nav-item nav-link {{ ($title == 'Service') ? 'active' : '' }}">Servis</a>
-                                        <a href="" class="nav-item nav-link">Order</a>
-                                        <a href="" class="nav-item nav-link">Chat</a>
-                                        <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
-                                        <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
+                                    @guest
+                                        @if (Route::has('login'))
+
+                                            <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
+                                            <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
+                                        @endif
+                                    @else
+                                        <a href="{{ route('teknisi.detailOrder') }}" class="nav-item nav-link">Order</a>
+                                        <a href="{{ route('inbox.index') }}" class="nav-item nav-link">Chat</a>
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                     onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                                    {{ __('Logout') }}
+                                                </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                            </div>
+                                        </div>
+                                    @endguest
                                     </div>
                                 </div>
                             </div>
