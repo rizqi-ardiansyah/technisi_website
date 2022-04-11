@@ -1975,3 +1975,27 @@ a:focus {
     color: whitesmoke;
     text-decoration: underline;
 }
+
+#register .container {
+    display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+
+    #register .container {
+        display: block;
+    }
+
+    #register .container .col-md-8 {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    #register .container .col-md-8 {
+        width: 100%;
+        align-items: center;
+        display: block;
+    }
+}

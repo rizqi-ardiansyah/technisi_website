@@ -28,7 +28,7 @@ Route::prefix('/')->group(function () {
 
     Route::get('', function () {
         return view('index', [
-            'title'=> 'Home'
+            'title' => 'Home'
         ]);
     })->name('index.home');
 

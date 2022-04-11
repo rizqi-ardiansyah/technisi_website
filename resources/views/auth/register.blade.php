@@ -3,8 +3,8 @@
 <body>
     <div class="header home">
         <div class="container-fluid">
-            <div class="hero row align-items-center">
-                <div class="container d-flex justify-content-between">
+            <div class="hero row align-items-center" id="register">
+                <div class="container justify-content-between">
                     <div class="col-md-8">
                         <h1 class="text-white"><b>Register</b></h1>
                         <form action="{{ route('register') }}" class="form-register col-md-8" method="POST">
