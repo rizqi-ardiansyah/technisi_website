@@ -68,7 +68,7 @@
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
                                         <a href="{{ route('teknisi.index') }}" class="nav-item nav-link active">Home</a>
-                                        <a href="" class="nav-item nav-link">Riwayat Order</a>
+                                        <a href="{{ route('teknisi.detailOrder') }}" class="nav-item nav-link">Detail Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
                                         <a href="" class="nav-item nav-link">Profil</a>
                                         <a href="" class="nav-item nav-link">Log Out</a>
