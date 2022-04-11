@@ -5,8 +5,8 @@
     <meta charset="utf-8">
         <title>TechNisi</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Cleaning Company Website Template" name="keywords">
-        <meta content="Cleaning Company Website Template" name="description">
+        <meta content="TechNisi" name="keywords">
+        <meta content="TechNisi" name="description">
 
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,7 +26,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/ord.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ord.css">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
                                 <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+012 345 67890</a>
                             </div>
                             <div class="topbar-col">
-                                <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>technisi@gmail.com</a>
+                                <a href="mailto:technisi@gmail.com"><i class="fa fa-envelope"></i>technisi@gmail.com</a>
                             </div>
                             <div class="topbar-col">
                                 <div class="topbar-social">
@@ -80,16 +80,17 @@
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center mt-100">
-                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="container">
                                     <h6>TEKNISI</h6>
                                     <div class="row">
-                                        <div class="col-xs-6" style="padding-top: 2vh;">
+                                        <div class="col-xs-6" style="padding-top: 1vh;">
                                             <ul type="none">
-                                                <li> MOHAMMAD ARIFIN </li>
-                                                <li> 081890324618 </li>
+                                                <pre>
+                                                <li> Nama       : Mohammad Arifin </li>
+                                                <li> Telepon    : 081890324618 </li>
+                                                </pre>
                                             </ul>
                                         </div>
                                     </div>
@@ -97,35 +98,31 @@
                                 <!-- Modal body -->
                                 <div class="modal-body">
                                     <div class="container">
-                                        <h6>Pelanggan</h6>
+                                        <h6>PELANGGAN</h6>
                                         <div class="row">
-                                            <div class="col-xs-6" style="padding-top: 2vh;">
+                                            <div class="col-xs-6" style="padding-top: 1vh;">
                                                 <ul type="none">
-                                                    <li>Nama: Hendra Kusuma</li>
-                                                    <li>Alamat: Jalan Dahlia No 5 Malang</li>
-                                                    <li>Telepon: 082793125890</li>
+                                                    <pre>
+                                                    <li>Nama    : Hendra Kusuma</li>
+                                                    <li>Alamat  : Jalan Dahlia No 5 Malang</li>
+                                                    <li>Telepon : 082793125890</li>
+                                                    </pre>
                                                 </ul>
                                             </div>
                                         </div>
-                                        <h6>Order Details</h6>
+                                        <h6>DETAIL PEMESANAN</h6>
                                         <div class="row">
-                                            <div class="col-xs-6">
+                                            <div class="col-xs-6" style="padding-top: 1vh;">
                                                 <ul type="none">
-                                                    <li class="left">Order number:</li>
-                                                    <li class="left">Jenis Kerusakan:</li>
-                                                    <li class="left">Tanggal Perbaikan:</li>
-                                                    <li class="left">Biaya Jasa:</li>
-                                                    <li class="left">Biaya Transport:</li>
-                                                    <li class="left">Total:</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <ul class="right" type="none">
-                                                    <li class="right"></li>
-                                                    <li class="right"></li>
-                                                    <li class="right"></li>
-                                                    <li class="right"></li>
-                                                    <li class="right"></li>
+                                                    <pre>
+                                                    <li class="left">Order number       : 123A</li>
+                                                    <li class="left">Jenis Kerusakan    : Freon pada AC bocor</li>
+                                                    <li class="left">Tanggal Perbaikan  : 08 April 2022</li>
+                                                    <li class="left">Biaya Jasa         : Rp 80.000,00</li>
+                                                    <li class="left">Biaya Transport    : Rp 10.000,00</li>
+                                                    <li class="left">Total              : Rp 90.000,00</li>
+                                                    <li class="left">Jenis Pembayaran   : Cash</li>
+                                                    </pre>
                                                 </ul>
                                             </div>
                                         </div>
@@ -133,7 +130,7 @@
                                 </div>
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                    <button type="button" class="btn">SELESAI</button>
+                                    <button type="button" class="btn">SELESAI </button>
                                 </div>
                             </div>
                         </div>
