@@ -18,13 +18,19 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/ord.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="wrapper">
+
             <!-- Header Start -->
             <div class="header home">
                 <div class="container-fluid">
@@ -64,7 +70,7 @@
                                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                     <div class="navbar-nav ml-auto">
                                         <a href="indexTeknisi" class="nav-item nav-link active">Home</a>
-                                        <a href="" class="nav-item nav-link">Riwayat Order</a>
+                                        <a href="detailOrder" class="nav-item nav-link">Riwayat Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
                                         <a href="" class="nav-item nav-link">Profil</a>
                                         <a href="" class="nav-item nav-link">Log Out</a>
@@ -73,21 +79,69 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="hero row align-items-center">
-                        <div class="col-md-7">
-                            <h2>Best & Trusted</h2>
-                            <h2><span>Website</span> Service</h2>
-                            <p>Selamat Datang Teknisi</p>
-                            <a class="btn" href="">Detail Order</a>
+                    <div class="container d-flex justify-content-center mt-100">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">  
+                                <div class="modal-body">
+                        <div class="container">
+                        <h6>TEKNISI</h6>
+                        <div class="row">
+                            <div class="col-xs-6" style="padding-top: 2vh;">
+                                <ul type="none">
+                                    <li> MOHAMMAD ARIFIN </li>
+                                    <li> 081890324618 </li>
+                                </ul>
+                            </div>
+                        </div>
+                                </div> 
+                                <!-- Modal body -->
+                    <div class="modal-body">
+                    <div class="container">
+                        <h6>Pelanggan</h6>
+                        <div class="row">
+                            <div class="col-xs-6" style="padding-top: 2vh;">
+                                <ul type="none">
+                                    <li>Nama: Hendra Kusuma</li>
+                                    <li>Alamat: Jalan Dahlia No 5 Malang</li>
+                                    <li>Telepon: 082793125890</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h6>Order Details</h6>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <ul type="none">
+                                    <li class="left">Order number:</li>
+                                    <li class="left">Jenis Kerusakan:</li>
+                                    <li class="left">Tanggal Perbaikan:</li>
+                                    <li class="left">Biaya Jasa:</li>
+                                    <li class="left">Biaya Transport:</li>
+                                    <li class="left">Total:</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="right" type="none">
+                                    <li class="right"></li>
+                                    <li class="right"></li>
+                                    <li class="right"></li>
+                                    <li class="right"></li>
+                                    <li class="right"></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- Modal footer -->
+                <div class="modal-footer"> <button type="button" class="btn">SELESAI</button> </div>
             </div>
-            <!-- Header End -->
+        </div>
+        </div>
+        </div>
+    </div>    
+    <!-- Header End -->
 
-            <!-- Footer Start -->
-            <div class="footer">
+        </div>
+    <!-- Footer Start -->
+    <div class="footer">
                 <div class="container copyright">
                     <p class="text-center">&copy; Copyright 2022 Kelompok 1 - All Right Reserved.</p>
                 </div>
