@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Storage;
 class MessageIndex extends Component {
     use WithFileUploads;
 
+    public function __construct() {
+        ini_set('max_execution_time', 150);
+    }
+
     public $cust;
     public $tech;
     public $message = '';

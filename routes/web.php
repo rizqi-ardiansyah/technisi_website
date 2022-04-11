@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Storage;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::prefix('/')->group(function () {
     Route::get('login-page', function () {
@@ -63,7 +64,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/inbox', [MessageController::class, 'index', 'title' => 'Message'])->name('inbox.index');
     Route::get('/inbox/{id}', [MessageController::class, 'show', 'title' => 'Message'])->name('inbox.show');
 });
-
-// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
