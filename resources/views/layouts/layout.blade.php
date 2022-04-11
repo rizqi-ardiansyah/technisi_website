@@ -77,7 +77,7 @@
                                             <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
                                         @endif
                                     @else
-                                        <a href="" class="nav-item nav-link">Order</a>
+                                        <a href="{{ route('teknisi.detailOrder') }}" class="nav-item nav-link">Order</a>
                                         <a href="{{ route('inbox.index') }}" class="nav-item nav-link">Chat</a>
                                         <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
