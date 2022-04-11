@@ -17,17 +17,20 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 Auth::routes();
+    Route::get('/indexTeknisi', function () {
+        return view('teknisi.technician');
+    })->name('teknisi.index');
 
-<<<<<<< HEAD
-    Route::get('/indexTeknisi', function () {return view('teknisi/indexTeknisi');});
-    Route::get('/detailOrder', function () {return view('teknisi/detailOrder');});
-});
-=======
+    Route::get('/detailOrder', function () {
+        return view('teknisi.detailOrder');
+    })->name('teknisi.detailOrder');
+// });
+
 Route::prefix('/')->group(function () {
     Route::get('login-page', function () {
         return view('auth.login', ['title' => 'Login']);
     })->name('login.auth');
->>>>>>> bb81dbbf2c6b5ba095759d58e1d0fef29f8d01fa
+
 
     Route::get('register-page', function () {
         return view('auth.register', ['title' => 'Register']);
