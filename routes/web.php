@@ -23,6 +23,7 @@ Route::prefix('/')->group(function(){
     Route::get('/service', function () {return view('service');});
 
     Route::get('/indexTeknisi', function () {return view('teknisi/indexTeknisi');});
+    Route::get('/detailOrder', function () {return view('teknisi/detailOrder');});
 });
 
 
