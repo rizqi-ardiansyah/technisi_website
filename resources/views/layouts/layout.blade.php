@@ -78,7 +78,7 @@
                                         @endif
                                     @else
                                         <a href="" class="nav-item nav-link">Order</a>
-                                        <a href="" class="nav-item nav-link">Chat</a>
+                                        <a href="{{ route('inbox.index') }}" class="nav-item nav-link">Chat</a>
                                         <div class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
                                             <div class="dropdown-menu">
