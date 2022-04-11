@@ -212,7 +212,7 @@
             </div>
             @endif
             <!-- FAQs End -->
-
+            @include('sweetalert::alert')
             @yield('main-content')
 
             <!-- Footer Start -->

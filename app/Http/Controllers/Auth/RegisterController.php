@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class RegisterController extends Controller {
     use RegistersUsers;
@@ -73,7 +74,7 @@ class RegisterController extends Controller {
         $user->id_role = $request->id_role;
         $user->password = Hash::make($request->password);
         $user->save();
-
-        return response()->json(['message' => 'User has successfully created']);
+        Alert::success('Success', 'Success Create Data');
+        return redirect()->route('login.auth');
     }
 }
