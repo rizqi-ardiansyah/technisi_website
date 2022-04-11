@@ -1,50 +1,33 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.layout')
+@section('main-content')
 <head>
-    <title>TechNisi | Message</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{ asset('assets/image/logo/icon.ico') }}">
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-     <script src="{{ asset('js/apps.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link rel="icon" href={{ asset('assets/image/logo/icon.ico') }}>
     @livewireStyles
-
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
-
-<body>
-    <div>
+    <div class="container-fluid mx-auto my-3">
         <div class="row justify-content-center" wire:poll="mountContent()">
             @if(auth()->user()->id_role == 2 || auth()->user()->id_role == 3)
                 <div class="col-md-4" wire:init>
                     <div class="card">
                         <div class="card-header">
-                            Users
+                            Message List
                         </div>
                         <div class="card-body chatbox p-0">
-                            <ul class="list-group list-group-flush" wire:poll="render">
+                            <ul class="list-group" wire:poll="render">
                                 @foreach($data as $user)
                                     @php
                                         $is_seen = App\Models\Message::where('sender', $user->user_id)->where('receiver', auth()->id())->where('is_seen', false)->get() ?? null
                                     @endphp
                                     <a href="{{ route('inbox.show', $user->msg_id) }}" class="text-dark link">
                                         <li class="list-group-item" wire:click="getUser({{ $user->id }})" id="user_{{ $user->id }}">
-                                            <img class="img-fluid avatar" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png">
-                                            {{-- @if($user->is_online) <i class="fa fa-circle text-success online-icon"></i> @endif {{ $user->name }} --}}
+                                            <div class="row d-flex justify-content-around">
+                                                <div class="col-md-3"><img class="img-fluid avatar" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png"></div>
+                                                <div class="col-md-9">
+                                                    <p style="font-size: 14px;">{{ $user->senderName }}</p>
+                                                    <p class="text-truncate" style="font-size: 12px;">{{ $user->msg_content }}</p>
+                                                </div>
+                                            </div>
+                                                {{-- @if($user->is_online) <i class="fa fa-circle text-success online-icon"></i> @endif {{ $user->name }} --}}
                                             @if(filled($is_seen))
                                                 <div class="badge badge-success rounded">{{ $is_seen->count() }}</div>
                                             @endif
@@ -124,9 +107,9 @@
                                 @endif --}}
                                 <div class="row">
                                     <div class="col-md-7">
-                                        {{-- <input wire:model="message" class="form-control input shadow-none w-100 d-inline-block" placeholder="Type a message" @if(!$file) required @endif> --}}
+                                        <input wire:model="message" class="form-control input shadow-none w-100 d-inline-block" placeholder="Type a message">
                                     </div>
-                                    {{-- @if(empty($file))
+                                    {{-- @if(empty($file)) --}}
                                     <div class="col-md-1">
                                         <button type="button" class="border" id="file-area">
                                             <label>
@@ -135,7 +118,7 @@
                                             </label>
                                         </button>
                                     </div>
-                                    @endif --}}
+                                   {{-- @endif --}}
                                     <div class="col-md-4">
                                         <button class="btn btn-primary d-inline-block w-100"><i class="far fa-paper-plane"></i> Send</button>
                                     </div>
@@ -148,5 +131,4 @@
         </div>
     </div>
     @livewireScripts
-</body>
-</html>
+@endsection

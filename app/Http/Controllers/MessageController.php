@@ -13,14 +13,15 @@ class MessageController extends Controller {
     }
 
     public function index(){
-        $data = User::select('users.id', 'users.name', 'users.phone', 'm.receiver',
-        'm.msg_id', 'm.msg_content', 'm.created_at', 'm.is_seen', 'msg.sender')
-        ->join('message AS m', 'm.receiver', '=', 'id')
-        ->join('message AS msg', 'msg.sender', '=', 'id')
+        $data = User::select('users.id', 'users.name', 'users.phone', 'm.receiver', 'ussr.name AS senderName', 'ussr.id',
+        'm.msg_id', 'm.msg_content AS msg_content', 'm.created_at', 'm.is_seen', 'msg.sender')
+        ->join('message AS m', 'm.receiver', '=', 'users.id')
+        ->join('users AS ussr', 'ussr.id', '=', 'm.sender')
+        ->join('message AS msg', 'msg.sender', '=', 'users.id')
         ->where('m.receiver', auth()->user()->id)
-        ->orderBy('id', 'DESC')->get();
+        ->orderBy('m.created_at', 'DESC')->get();
 
-        $messages = Message::select('u.id', 'u.name', 'usr.name AS senderName', 'u.phone', 'receiver',
+        $messages = Message::select('u.id', 'u.name AS receive', 'usr.name AS senderName', 'u.phone', 'receiver',
         'msg_id', 'msg_content', 'message.created_at', 'is_seen', 'sender')
         ->join('users AS u', 'receiver', '=', 'u.id')
         ->join('users AS usr', 'sender', '=', 'usr.id')
@@ -30,6 +31,7 @@ class MessageController extends Controller {
             return view('livewire.message-index', [
                 'data' => $data,
                 'message' => $messages,
+                'title' => 'Message'
             ]);
         }
     }

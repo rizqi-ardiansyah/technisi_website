@@ -70,10 +70,29 @@
                                         <a href="/" class="nav-item nav-link {{ ($title == 'Home') ? 'active' : '' }}">Home</a>
                                         <a href="about" class="nav-item nav-link {{ ($title == 'About') ? 'active' : '' }}">Tentang</a>
                                         <a href="service" class="nav-item nav-link {{ ($title == 'Service') ? 'active' : '' }}">Servis</a>
+                                    @guest
+                                        @if (Route::has('login'))
+
+                                            <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
+                                            <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
+                                        @endif
+                                    @else
                                         <a href="" class="nav-item nav-link">Order</a>
                                         <a href="" class="nav-item nav-link">Chat</a>
-                                        <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
-                                        <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
+                                        <div class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                                     onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                                    {{ __('Logout') }}
+                                                </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                            </div>
+                                        </div>
+                                    @endguest
                                     </div>
                                 </div>
                             </div>
