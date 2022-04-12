@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\TechnicianController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
@@ -16,10 +17,11 @@ use Illuminate\Support\Facades\Storage;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
-    Route::get('/indexTeknisi', function () {
-        return view('teknisi.technician');
-    })->name('teknisi.index');
+Route::get('/indexTeknisi', function () {
+    return view('teknisi.technician');
+})->name('teknisi.index');
 // });
 
 Route::prefix('/')->group(function () {
@@ -63,6 +65,7 @@ Route::prefix('/')->group(function () {
     });
 });
 
+Route::get('/cdteknisi', [TechnicianController::class, 'ubahdata'])->name('inbox.cdt');
 
 Route::group(['middleware' => 'auth'], function () {
     //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -71,8 +74,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/detailOrder', function () {
         return view(
             'teknisi.detailOrder',
-            ['title' => 'Order Detail'])
-        ;
+            ['title' => 'Order Detail']
+        );
     })->name('teknisi.detailOrder');
 });
 

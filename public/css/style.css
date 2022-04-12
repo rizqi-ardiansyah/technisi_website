@@ -1993,9 +1993,21 @@ a:focus {
         display: block;
     }
 
-    #register .container .col-md-8 {
+    #register .container .col-md-4 {
         width: 100%;
         align-items: center;
         display: block;
+    }
+
+    #form-ubah-data {
+        display: block;
+    }
+
+    #form-ubah-data .col {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        float: none;
+        align-items: center;
     }
 }
