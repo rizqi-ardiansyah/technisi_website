@@ -2,25 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\Technician;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
+use App\Http\Requests\TechnicianRequest;
 use App\Http\Requests\TransactionRequest;
 use App\Models\Specialization;
 
+<<<<<<< HEAD
 class TechnicianController extends Controller
 {
     public function createTrans(TransactionRequest $request)
     {
+=======
+class TechnicianController extends Controller {
+    public function createTech(TechnicianRequest $request){
+>>>>>>> 837a9553c96605492975350d733559a2d547508c
         $request->validated();
-        $transaction = new Transaction;
-        $transaction->customer_id = $request->customer_id;
-        $transaction->id_technician = $request->id_technician;
-        $transaction->level = $request->level;
-        $transaction->price = $request->price;
-        $transaction->status = 'Order';
-        $transaction->desc = $request->desc;
-        $transaction->save();
+        $tech = new Technician;
+        if($request->hasFile('photos')){
+            $path = 'assets/image/tech'.$tech->photos;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('photos');
+            $ext = $file->getClientOriginalExtension();
+            $img_name = time().'.'.$ext;
+            $file->move('assets/image/tech', $img_name);
+            $tech->photos = $img_name;
+        }
+        $tech->specialist_id = $request->customer_id;
+        $tech->user_id = $request->user_id;
+        $tech->certification = $request->certification;
+        $tech->address = $request->address;
+        $tech->save();
 
         return response()->json(['message' => 'Successfully create transaction']);
     }
@@ -137,11 +156,41 @@ class TechnicianController extends Controller
         return response()->json(["Message"   => "Transaction has successfully update"]);
     }
 
+<<<<<<< HEAD
     public function ubahData()
     {
         return view('ubahdata', [
             'bidang' => Specialization::all(),
             'title' => 'Teknisi',
         ]);
+=======
+    public function updateTech(TechnicianRequest $request, UserRequest $req, $id){
+        $request->validated();
+        //$req->validated();
+        $tech = Technician::where('technician_id', $id)->first();
+        $id_ = $tech->user_id;
+        $user = User::select('id', 'name', 'email', 'username', 'phone')->where('id', $tech->user_id)->first();
+
+        if($request->hasFile('photos')){
+            $path = 'assets/image/tech'.$tech->photos;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('photos');
+            $ext = $file->getClientOriginalExtension();
+            $img_name = time().'.'.$ext;
+            $file->move('assets/image/tech', $img_name);
+            $tech->photos = $img_name;
+        }
+        $tech->certification = $request->certification;
+        $tech->address = $request->address;
+        $user->name = $req->name;
+        $user->email = $req->email;
+        $user->username = $req->username;
+        $user->phone = $req->phone;
+        $tech->save();
+        $user->update();
+        return response()->json(["Message"   => "Technician has successfully update"]);
+>>>>>>> 837a9553c96605492975350d733559a2d547508c
     }
 }

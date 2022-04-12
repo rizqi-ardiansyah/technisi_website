@@ -18,6 +18,17 @@ class CustomerController extends Controller {
     public function createCust(CustomerRequest $request){
         $request->validated();
         $data = new Customer();
+        if($request->hasFile('photos')){
+            $path = 'assets/image/cust'.$data->photos;
+            if(File::exists($path)){
+                File::delete($path);
+            }
+            $file = $request->file('photos');
+            $ext = $file->getClientOriginalExtension();
+            $img_name = time().'.'.$ext;
+            $file->move('assets/image/cust', $img_name);
+            $data->photos = $img_name;
+        }
         $data->name = $request->name;
         $data->address = $request->address;
         $data->user_id = $request->user_id;
