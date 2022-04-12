@@ -19,7 +19,7 @@ class TechnicianController extends Controller {
 
     public function createTech(TechnicianRequest $request){
         $request->validated();
-        $data = new Technician();
+        $data = new Technician;
         $data->specialist_id = $request->specialist_id;
         $data->user_id = $request->user_id;
         $data->certification = $request->certification;
