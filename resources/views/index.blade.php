@@ -13,10 +13,11 @@
                             <div class="about-text">
                                 <h2><span>2</span> Years Experience</h2>
                                 <p>
-                                    Aplikasi Teknisi berbasis webiste yang sudah berjalan 2 tahun.
+                                    Aplikasi Teknisi adalah aplikasi yang bertujuan memberikan kemudahan masyarakat dalam mencari teknisi. Aplikasi ini dibuat berbasis website dan menggunakan desain ui/ux yang mudah digunakan.
+
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    Fitur-fitur yang terdapat pada aplikasi ini antara lain customer dapat memanggil teknisi kapan saja dengan reservasi terlebih dahulu, dapat mengirimkan pesan kepada teknisi.
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -31,16 +32,15 @@
             <div class="service">
                 <div class="container">
                     <div class="section-header">
-                        <p>Our Services</p>
-                        <h2>Provide Services Worldwide</h2>
+                        <h2>Menyediakan Layanan di Seluruh Indonesia</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="service-item">
-                                <img src="img/service-1.jpg" alt="Service">
-                                <h3>Flour Cleaning</h3>
+                                <img src="img/servis-1.jpg" alt="Service">
+                                <h3>Servis Laptop</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                                    Berbagai jenis laptop dapat ditangani
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -48,19 +48,19 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="service-item">
                                 <img src="img/service-2.jpg" alt="Service">
-                                <h3>Glass Cleaning</h3>
+                                <h3>Servis Kulkas</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                                    Berbagai merk kulkas dapat diperbaiki
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="service-item">
-                                <img src="img/service-3.jpg" alt="Service">
-                                <h3>Carpet Cleaning</h3>
+                                <img src="img/servis-3.jpg" alt="Service">
+                                <h3>Servis AC</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                                    Jenis AC yang dapat ditangani bervariasi
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -68,9 +68,9 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="service-item">
                                 <img src="img/service-4.jpg" alt="Service">
-                                <h3>Toilet Cleaning</h3>
+                                <h3>Servis TV</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                                    TV Tabung dan TV LED dapat diperbaiki
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -88,10 +88,11 @@
                         <div class="col-md-5">
                             <div class="section-header left">
                                 <p>Mengapa Memilih Kami</p>
-                                <h2>Teknisi Ahli dan Layanan Terbaik</h2>
+                                <h2>Teknisi Ahli</h2>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                Aplikasi Technisi dapat membantu user yang mempunyai masalah teknisi di rumah, di kantor yang tidak sempat membawa ke tempat service.
+                                Disini juga terdapat ahli-ahli teknisi sesuai bidangnya yang sudah mempunyai sertifikat khusus.
                             </p>
                             <a class="btn" href="">Learn More</a>
                         </div>
@@ -101,9 +102,9 @@
                                     <img src="img/feature-1.jpg" alt="Feature">
                                 </div>
                                 <div class="col-7">
-                                    <h3>Teknisi Ahli</h3>
+                                    <h3>Layanan Terbaik</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        Pelayanan antara pelanggan dan teknisi dijamin memuaskan.
                                     </p>
                                 </div>
                             </div>
@@ -114,7 +115,7 @@
                                 <div class="col-7">
                                     <h3>Harga Terjangkau</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        Biaya untuk perbaikan sangat terjangkau bagi masyarakat.
                                     </p>
                                 </div>
                             </div>
@@ -125,7 +126,7 @@
                                 <div class="col-7">
                                     <h3>Layanan Cepat & Terbaik</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                        Prses perbaikan dapat dilakukan dengan cepat dan hasil yang bagus.
                                     </p>
                                 </div>
                             </div>
@@ -140,18 +141,17 @@
             <div class="team">
                 <div class="container">
                     <div class="section-header">
-                        <p>Tim Member</p>
-                        <h2>Temukan Teknisi Terbaik Kami</h2>
+                        <p>Tim Teknisi</p>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img src="img/team-7.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Josh Dunn</h2>
-                                    <h3>Teknisi TV</h3>
+                                    <h2>Muhammad Arief</h2>
+                                    <h3>Teknisi Mekanik</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -164,11 +164,11 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
+                                    <img src="img/team-8.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Mollie Ross</h2>
-                                    <h3>Teknisi Kulkas</h3>
+                                    <h2>Agus Dewa</h2>
+                                    <h3>Teknisi IT</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -181,11 +181,11 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
+                                    <img src="img/team-9.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Dylan Adams</h2>
-                                    <h3>Teknisi AC</h3>
+                                    <h2>Adam Hanif</h2>
+                                    <h3>Teknisi Listrik Instalasi</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -198,11 +198,11 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img src="img/team-5.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Nathan Ruwana</h2>
-                                    <h3>Teknisi Mebel</h3>
+                                    <h2>Ryan Bagus</h2>
+                                    <h3>Teknisi Komputer</h3>
                                     <div class="team-social">
                                         <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
                                         <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
@@ -239,7 +239,7 @@
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Servis yang dapat dikerjakan sangat bervariasi seperti servis TV, AC, Kulkas, dan Laptop.
                                         </div>
                                     </div>
                                 </div>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Lama proses perbaikan sesuai dengan tingkat kerusakan, teknisi dapat menangani perbaikan biasanya selama maksimal 7 hari kerja.
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Biaya servis tergantung jenis barang dan tingkat kerusakan, biaya servis dijamin terjangkau.
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Pelanggan dapat melakukan pendaftaran terlebih dahulu pada web TechNisi, kemudian pelanggan dapat melakukan pemesanan servis pada web tersebut.
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Hari kerja untuk teknisi adalah 7 hari kerja.
                                         </div>
                                     </div>
                                 </div>
@@ -313,10 +313,10 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    Servis kulkas cepat dan murah
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Sinta Rahma</h3>
+                                <h4>Ibu Rumah Tangga</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -325,10 +325,10 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    TV saya tidak bisa dinyalakan, diservis selama 3 jam langsung bisa nyala
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Andianto Maheda</h3>
+                                <h4>Buruh</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -337,10 +337,10 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    AC kantor sudah diperbaiki dan pelayanan memuaskan
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Alex Noer</h3>
+                                <h4>Pekerja Kantoran</h4>
                             </div>
                         </div>
                         <div class="testimonial-item">
@@ -349,10 +349,10 @@
                             </div>
                             <div class="testimonial-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    Sangat bagus, good job TechNisi
                                 </p>
-                                <h3>Customer Name</h3>
-                                <h4>Profession</h4>
+                                <h3>Asifa Nurrahma</h3>
+                                <h4>Guru SD</h4>
                             </div>
                         </div>
                     </div>
@@ -360,63 +360,4 @@
             </div>
             <!-- Testimonial End -->
 
-            <!-- Blog Start -->
-            <div class="blog">
-                <div class="container">
-                    <div class="section-header">
-                        <p>Terbaru Dari Blog</p>
-                        <h2>Tetap Update dari Blog kami</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="blog-item">
-                                <img src="img/blog-1.jpg" alt="Blog">
-                                <h3>Lorem ipsum dolor</h3>
-                                <div class="meta">
-                                    <i class="fa fa-list-alt"></i>
-                                    <a href="">Servis TV</a>
-                                    <i class="fa fa-calendar-alt"></i>
-                                    <p>11-Jun-20</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="blog-item">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                                <h3>Lorem ipsum dolor</h3>
-                                <div class="meta">
-                                    <i class="fa fa-list-alt"></i>
-                                    <a href="">Servis AC</a>
-                                    <i class="fa fa-calendar-alt"></i>
-                                    <p>11-Jun-20</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="blog-item">
-                                <img src="img/blog-3.jpg" alt="Blog">
-                                <h3>Lorem ipsum dolor</h3>
-                                <div class="meta">
-                                    <i class="fa fa-list-alt"></i>
-                                    <a href="">Servis Kulkas</a>
-                                    <i class="fa fa-calendar-alt"></i>
-                                    <p>11-Jun-20</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 @endsection

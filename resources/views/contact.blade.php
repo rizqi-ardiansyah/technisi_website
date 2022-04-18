@@ -36,7 +36,7 @@
                                         </div>
                                         <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                                Servis yang dapat dikerjakan sangat bervariasi seperti servis TV, AC, Kulkas, dan Laptop.
                                             </div>
                                         </div>
                                     </div>
@@ -48,7 +48,7 @@
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                                Lama proses perbaikan sesuai dengan tingkat kerusakan, teknisi dapat menangani perbaikan biasanya selama maksimal 7 hari kerja.
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                                         </div>
                                         <div id="collapseThree" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                                Biaya servis tergantung jenis barang dan tingkat kerusakan, biaya servis dijamin terjangkau.
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                                Pelanggan dapat melakukan pendaftaran terlebih dahulu pada web TechNisi, kemudian pelanggan dapat melakukan pemesanan servis pada web tersebut.
                                             </div>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                                Hari kerja untuk teknisi adalah 7 hari kerja.
                                             </div>
                                         </div>
                                     </div>
