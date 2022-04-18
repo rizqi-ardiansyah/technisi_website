@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\TechnicianController as ApiTechnicianController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\TechnicianController;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
@@ -62,6 +63,11 @@ Route::prefix('/')->group(function () {
     Route::get('techs', function () {
         return view('teknisi.technician', [
             'title' => 'Teknisi'
+        ]);
+    });
+    Route::get('form-transc', function () {
+        return view('transactionForm', [
+            'title' => 'Transaksi Form',
         ]);
     });
     // Route::get('/tech', [ApiTechnicianController::class, 'showAll'])->name('tech.show');
