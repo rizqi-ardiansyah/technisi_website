@@ -57,7 +57,7 @@
                     </form>
                     <div class="d-flex justify-content-between text-bawah col-sm-4">
                         <div class="mt-2"><a href="{{ url()->previous() }}">Cancel</a></div>
-                        <div class="mt-2"><a href="#">Forgot Password?</a></div>
+                        <div class="mt-2"><a href="/">Home</a></div>
                     </div>
                 </center>
             </div>
