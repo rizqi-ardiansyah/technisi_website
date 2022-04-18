@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\TechnicianController as ApiTechnicianController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\TechnicianController;
 use Illuminate\Support\Facades\Auth;
@@ -58,11 +59,14 @@ Route::prefix('/')->group(function () {
         ]);
     })->name('about.home');
 
-    Route::get('tec', function () {
+    Route::get('techs', function () {
         return view('teknisi.technician', [
             'title' => 'Teknisi'
         ]);
     });
+    // Route::get('/tech', [ApiTechnicianController::class, 'showAll'])->name('tech.show');
+    Route::get('/tech', [TechnicianController::class, 'showAll'])->name('tech.show');
+    Route::get('/tech/{id_tech}', [TechnicianController::class, 'showTech'])->name('tech.detail');
 });
 
 Route::get('/cdteknisi', [TechnicianController::class, 'ubahdata'])->name('inbox.cdt');

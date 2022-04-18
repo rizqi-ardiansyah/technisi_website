@@ -50,14 +50,14 @@ class LoginController extends Controller {
             'password' => $input['password']
         ))){
             if(auth()->user()->id_role == 2){
-                Alert::success('Success', 'Login Success');
+                Alert::success('Success', 'Login Sukses');
                 return redirect()->route('inbox.index');
             } else if(auth()->user()->id_role == 3){
-                Alert::success('Success', 'Login Success');
+                Alert::success('Success', 'Login Sukses');
                 return redirect()->route('inbox.index');
             }
         } else {
-            Alert::error('Error', 'Email or Password are inccorect');
+            Alert::error('Error', 'Email atau Password Salah');
             return back();
         }
     }

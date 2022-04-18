@@ -74,6 +74,7 @@
                                         @if (Route::has('login'))
 
                                             <a href="contact" class="nav-item nav-link {{ ($title == 'Contact') ? 'active' : '' }}">Contact</a>
+                                            <a href="{{ route('tech.show') }}" class="nav-item nav-link">Teknisi</a>
                                             <a href={{ route('login.auth') }} class="nav-item nav-link {{ ($title == 'Login') ? 'active' : '' }}">Login</a>
                                         @endif
                                     @else

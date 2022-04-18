@@ -30,6 +30,14 @@ class UserSeeder extends Seeder
                 'phone' => '08113652797',
                 'id_role' => 2,
                 'password' => bcrypt('user123'),
+            ],
+            [
+                'name' => 'Michael Schumacher',
+                'email' => 'schumi@gmail.com',
+                'username' => 'schumi90',
+                'phone' => '08113652797',
+                'id_role' => 3,
+                'password' => bcrypt('user123'),
             ]
         ];
         DB::table('users')->insert($admin);
