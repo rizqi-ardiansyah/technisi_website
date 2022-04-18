@@ -1,4 +1,5 @@
 require('./bootstrap');
+<<<<<<< HEAD
 
 window.Toast = Swal.mixin({
     toast: true,
@@ -35,3 +36,5 @@ createApp({
     .mount(el);
 
 InertiaProgress.init({ color: '#4B5563' });
+=======
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf

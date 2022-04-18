@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\Permission\Contracts\Role as RoleContract;
@@ -165,5 +166,24 @@ class Role extends Model implements RoleContract
         }
 
         return $this->permissions->contains('id', $permission->id);
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
+
+class Role extends Model {
+    use HasFactory;
+
+    protected $table = 'Role';
+    protected $fillable = [
+        'id',
+        'name',
+        'created_at',
+        'updated_at',
+    ];
+
+    public function user(){
+        return $this->hasMany(User::class);
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     }
 }

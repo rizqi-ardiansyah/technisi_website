@@ -1,5 +1,6 @@
 window._ = require('lodash');
 
+<<<<<<< HEAD
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -10,6 +11,9 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
+=======
+try {
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     require('bootstrap');
 } catch (e) {}
 
@@ -38,4 +42,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     key: process.env.MIX_PUSHER_APP_KEY,
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
+<<<<<<< HEAD
 // });
+=======
+// });
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf

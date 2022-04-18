@@ -17,6 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+<<<<<<< HEAD
     public const HOME = '/dashboard';
 
     /**
@@ -27,6 +28,9 @@ class RouteServiceProvider extends ServiceProvider
      * @var string|null
      */
     // protected $namespace = 'App\\Http\\Controllers';
+=======
+    public const HOME = '/home';
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -40,11 +44,17 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             Route::prefix('api')
                 ->middleware('api')
+<<<<<<< HEAD
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
                 ->namespace($this->namespace)
+=======
+                ->group(base_path('routes/api.php'));
+
+            Route::middleware('web')
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
                 ->group(base_path('routes/web.php'));
         });
     }
@@ -57,7 +67,11 @@ class RouteServiceProvider extends ServiceProvider
     protected function configureRateLimiting()
     {
         RateLimiter::for('api', function (Request $request) {
+<<<<<<< HEAD
             return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+=======
+            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
         });
     }
 }

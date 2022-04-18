@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Laravel\Sanctum\Sanctum;
+
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 return [
 
     /*
@@ -13,10 +18,32 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'stateful' => explode(',', env(
         'SANCTUM_STATEFUL_DOMAINS',
         'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1,'.parse_url(env('APP_URL'), PHP_URL_HOST)
     )),
+=======
+    'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
+        '%s%s',
+        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
+        Sanctum::currentApplicationUrlWithPort()
+    ))),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Sanctum Guards
+    |--------------------------------------------------------------------------
+    |
+    | This array contains the authentication guards that will be checked when
+    | Sanctum is trying to authenticate a request. If none of these guards
+    | are able to authenticate the request, Sanctum will use the bearer
+    | token that's present on an incoming request for authentication.
+    |
+    */
+
+    'guard' => ['web'],
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------

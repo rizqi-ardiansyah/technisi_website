@@ -16,6 +16,11 @@ return [
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'users',
+<<<<<<< HEAD
+=======
+        // 'guard' => 'api',
+        // 'passwords' => 'users',
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     ],
 
     /*
@@ -31,21 +36,35 @@ return [
     | users are actually retrieved out of your database or other storage
     | mechanisms used by this application to persist your user's data.
     |
+<<<<<<< HEAD
     | Supported: "session", "token"
+=======
+    | Supported: "session"
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     |
     */
 
     'guards' => [
+<<<<<<< HEAD
+=======
+        // 'api' => [
+        //     'driver' => 'jwt',
+        //     'provider' => 'users',
+        // ],
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
+<<<<<<< HEAD
 
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
         ],
+=======
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     ],
 
     /*
@@ -86,7 +105,11 @@ return [
     | than one user table or model in the application and you want to have
     | separate password reset settings based on the specific user types.
     |
+<<<<<<< HEAD
     | The expire time is the number of minutes that the reset token should be
+=======
+    | The expire time is the number of minutes that each reset token will be
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |

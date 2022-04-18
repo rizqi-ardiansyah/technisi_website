@@ -12,7 +12,11 @@ class EventServiceProvider extends ServiceProvider
     /**
      * The event listener mappings for the application.
      *
+<<<<<<< HEAD
      * @var array
+=======
+     * @var array<class-string, array<int, class-string>>
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
      */
     protected $listen = [
         Registered::class => [
@@ -29,4 +33,17 @@ class EventServiceProvider extends ServiceProvider
     {
         //
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Determine if events and listeners should be automatically discovered.
+     *
+     * @return bool
+     */
+    public function shouldDiscoverEvents()
+    {
+        return false;
+    }
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 }

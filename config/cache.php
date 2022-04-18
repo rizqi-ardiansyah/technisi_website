@@ -27,7 +27,11 @@ return [
     | same cache driver to group types of items stored in your caches.
     |
     | Supported drivers: "apc", "array", "database", "file",
+<<<<<<< HEAD
     |            "memcached", "redis", "dynamodb", "null"
+=======
+    |         "memcached", "redis", "dynamodb", "octane", "null"
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     |
     */
 
@@ -88,6 +92,13 @@ return [
             'endpoint' => env('DYNAMODB_ENDPOINT'),
         ],
 
+<<<<<<< HEAD
+=======
+        'octane' => [
+            'driver' => 'octane',
+        ],
+
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
     ],
 
     /*
@@ -101,6 +112,10 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
+=======
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
 ];

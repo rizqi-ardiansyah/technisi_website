@@ -13,7 +13,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'default' => env('FILESYSTEM_DRIVER', 'local'),
+=======
+    'default' => env('FILESYSTEM_DISK', 'local'),
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------
@@ -50,6 +54,10 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
+<<<<<<< HEAD
+=======
+            'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
         ],
 
     ],

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Facade;
+
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 return [
 
     /*
@@ -54,7 +59,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
+=======
+    'asset_url' => env('ASSET_URL'),
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +76,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'timezone' => 'UTC',
+=======
+    'timezone' => 'Asia/Jakarta',
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +93,12 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'locale' => 'en',
+=======
+    'locale' => 'id',
+    // 'locale' => 'en',
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +124,12 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'faker_locale' => 'en_US',
+=======
+    'faker_locale' => 'id_ID',
+    // 'faker_locale' => 'en_US',
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     /*
     |--------------------------------------------------------------------------
@@ -174,8 +197,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+=======
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
     ],
 
@@ -190,6 +216,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
@@ -231,5 +258,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+=======
+    'aliases' => Facade::defaultAliases()->merge([
+        // ...
+    ])->toArray(),
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
 
 ];

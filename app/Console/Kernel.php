@@ -8,6 +8,7 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 class Kernel extends ConsoleKernel
 {
     /**
+<<<<<<< HEAD
      * The Artisan commands provided by your application.
      *
      * @var array
@@ -17,6 +18,8 @@ class Kernel extends ConsoleKernel
     ];
 
     /**
+=======
+>>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
      * Define the application's command schedule.
      *
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
