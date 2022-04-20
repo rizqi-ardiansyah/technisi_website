@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-## Admin-O-Matic Series on Youtube
-
-Admin panel built with Laravel 8, Jetstream, Inertia, AdminLTE, Spatie's Laravel-permissions, Jetstrap, and Bootstrap 4
-
-[Introduction Episode]
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=1L8B7pGOBdc
-" target="_blank"><img src="http://img.youtube.com/vi/1L8B7pGOBdc/0.jpg" 
-alt="Admin-O-Matic Intro" width="240" height="180" border="10" /></a>
-=======
-<h1 style="text-align:center; font-weight:bolder;">Catatan Sebelum Melakukan Kloning Job Calling</h1>
-
 ## Beberapa Catatan Terkait Penggunaan Repository Ini
 1. Silahkan melakukan kloning pada repository ini dengan meng-copy url repository
 
@@ -48,4 +35,3 @@ alt="Admin-O-Matic Intro" width="240" height="180" border="10" /></a>
         <li> <a href="https://coreui.io/">Core UI</a></li>
         <li> <a href="https://adminlte.io/">Admin LTE</a></li>
     <ul>
->>>>>>> 3abbe9a20101da6a35b2b6d345e4d6901f9c30cf
