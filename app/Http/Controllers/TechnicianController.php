@@ -12,13 +12,15 @@ use Illuminate\Support\Facades\File;
 use App\Http\Requests\TechnicianRequest;
 use App\Http\Requests\TransactionRequest;
 use App\Models\Specialization;
-class TechnicianController extends Controller {
 
-    public function createTech(TechnicianRequest $request){
+
+class TechnicianController extends Controller
+{
+    public function createTrans(TransactionRequest $request)
+    {
         $request->validated();
         $tech = new Technician;
         if($request->hasFile('photos')){
-
             $path = 'assets/image/tech'.$tech->photos;
             if(File::exists($path)){
                 File::delete($path);
@@ -29,7 +31,6 @@ class TechnicianController extends Controller {
             $file->move('assets/image/tech', $img_name);
             $tech->photos = $img_name;
         }
-
         $tech->specialist_id = $request->customer_id;
         $tech->user_id = $request->user_id;
         $tech->certification = $request->certification;
@@ -158,15 +159,7 @@ class TechnicianController extends Controller {
         $data->update();
         return response()->json(["Message"   => "Transaction has successfully update"]);
     }
-
-
-    public function ubahData() {
-        return view('ubahdata', [
-            'bidang' => Specialization::all(),
-            'title' => 'Teknisi',
-        ]);
-    }
-
+    
     public function updateTech(TechnicianRequest $request, UserRequest $req, $id){
         $request->validated();
         //$req->validated();
@@ -194,5 +187,6 @@ class TechnicianController extends Controller {
         $tech->save();
         $user->update();
         return response()->json(["Message"   => "Technician has successfully update"]);
+
     }
 }
